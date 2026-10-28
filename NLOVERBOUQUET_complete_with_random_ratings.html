@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#17231e">
+<title>NLOVERBOUQUET — Flowers for Every Moment</title>
+<style>
+:root{--ink:#17231e;--green:#24372e;--sage:#dce5d9;--cream:#f8f4ef;--paper:#fffdfa;--rose:#d98583;--rose-dark:#bd6668;--muted:#72766f;--line:#e7dfd7;--gold:#c99b53;--shadow:0 18px 50px #20291d14}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}
+.announcement{background:#142019;color:#f8f4ef;display:flex;justify-content:center;gap:30px;align-items:center;padding:10px 16px;font-size:11px;letter-spacing:.04em}.announcement span{opacity:.94}
+.site-header{position:sticky;top:0;z-index:20;background:#fffdfaee;backdrop-filter:blur(14px);border-bottom:1px solid #e9e2da}.nav{max-width:1240px;margin:auto;min-height:78px;padding:0 26px;display:flex;align-items:center;gap:34px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:235px}.brand-mark{font-size:32px;color:var(--green)}.brand strong{display:block;font-family:Georgia,serif;font-size:25px;font-weight:500;letter-spacing:-.04em}.brand small{display:block;font-size:9px;letter-spacing:.2em;color:var(--muted);margin-top:2px}.nav-links{display:flex;align-items:center;gap:28px;margin:auto}.nav-links a{color:var(--ink);font-size:13px;text-decoration:none;padding:9px 0}.nav-links a:hover{color:var(--rose-dark)}.nav-actions{display:flex;gap:10px;align-items:center}.icon-btn{border:0;background:transparent;color:var(--ink);width:38px;height:38px;border-radius:50%;font-size:20px;position:relative}.icon-btn:hover{background:var(--sage)}.cart-count{position:absolute;right:0;top:0;background:var(--rose);color:white;font-size:10px;min-width:17px;height:17px;border-radius:20px;display:grid;place-items:center}.menu-toggle{display:none}
+.hero{max-width:1440px;margin:auto;min-height:510px;position:relative;display:grid;grid-template-columns:.88fr 1.12fr;overflow:hidden;background:#d9c7b5}.hero-copy{padding:78px 5vw 70px max(28px,calc((100vw - 1200px)/2));position:relative;z-index:2;background:linear-gradient(90deg,#eee4d8 0%,#eee4d8f2 72%,#eee4d800 100%)}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:10px;font-weight:700;color:#5d6d60}.hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,5vw,76px);font-weight:400;line-height:.99;letter-spacing:-.055em;margin:20px 0}.hero h1 em{font-weight:400;color:#a65e60}.hero p{max-width:380px;line-height:1.8;color:#505950;font-size:14px}.primary-btn{border:0;border-radius:999px;background:var(--rose);color:white;padding:14px 23px;font-size:12px;font-weight:700;letter-spacing:.03em;transition:.2s;box-shadow:0 8px 20px #bd666826}.primary-btn:hover{background:var(--rose-dark);transform:translateY(-2px)}.hero .primary-btn{margin-top:18px}.hero-photo{position:absolute;inset:0 0 0 40%;background:linear-gradient(90deg,#eee4d800,#33261c08),url('https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=1800&q=90') center 48%/cover}.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#eee4d8 0%,#eee4d866 17%,transparent 48%),linear-gradient(0deg,#1a211a22,transparent 40%)}.hero-note{position:absolute;right:7%;bottom:36px;color:#fff;font-family:Georgia,serif;font-style:italic;font-size:21px;line-height:1.2;transform:rotate(-7deg);text-shadow:0 2px 15px #0006}.hero-dots{display:flex;gap:7px;margin-top:34px}.hero-dots i{width:7px;height:7px;border:1px solid #718174;border-radius:50%}.hero-dots i:first-child{background:#718174}
+.trustbar{background:var(--ink);color:#fff;display:grid;grid-template-columns:repeat(4,1fr);padding:19px max(24px,calc((100vw - 1160px)/2));gap:0}.trust-item{display:flex;gap:13px;align-items:center;padding:2px 22px;border-right:1px solid #ffffff2b}.trust-item:first-child{padding-left:0}.trust-item:last-child{border:0}.trust-icon{font-size:25px;color:#d8e1d3}.trust-item b{display:block;font-size:11px;font-weight:650}.trust-item small{display:block;font-size:10px;color:#bdc7be;margin-top:4px}
+.section{max-width:1200px;margin:auto;padding:70px 26px 10px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:25px;gap:16px}.section h2{font-family:Georgia,serif;font-size:34px;letter-spacing:-.04em;font-weight:400;margin:0}.section-sub{font-size:12px;color:var(--muted);margin-top:8px}.text-link{border:0;background:none;color:#7d4b49;font-size:12px;font-weight:650;text-decoration:none;white-space:nowrap}
+.products-section{padding-top:70px}.filters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin:0 0 26px}.filter{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;border:1px solid #e4d9cf;background:#fffdfa;color:var(--ink);border-radius:16px;overflow:hidden;text-align:right;box-shadow:0 8px 24px #20291d08;transition:transform .25s,box-shadow .25s,border-color .25s;min-width:0}.filter:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:#d7aaa4}.filter.active{border-color:#24372e;box-shadow:0 0 0 2px #24372e,0 12px 30px #20291d12;background:#fffdfa;color:var(--ink)}.filter-thumb{display:block;width:100%;height:190px;object-fit:cover;background:#eee6df;transition:transform .5s}.filter:hover .filter-thumb{transform:scale(1.035)}.filter-label{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:15px 16px;font-size:13px;font-weight:750;line-height:1.5}.filter-arrow{display:grid;place-items:center;width:28px;height:28px;flex:none;border-radius:50%;background:#f3eee7;color:#344639;font-size:17px}.filter.active .filter-arrow{background:var(--green);color:#fff}.filter:focus-visible{outline:3px solid #c99b53;outline-offset:3px}
+.price-filter{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin:0 0 18px;padding:8px 10px;background:#fffdfa;border:1px solid #e9e2da;border-radius:10px;box-shadow:0 3px 12px #20291d08}.price-filter .price-field{display:flex;align-items:center;gap:6px;min-width:0}.price-filter label{font-size:10px;font-weight:650;color:#72766f;white-space:nowrap}.price-filter input{height:32px;width:82px;min-width:0;border:1px solid #e7dfd7;border-radius:7px;background:#fff;color:var(--ink);font-size:11px;padding:6px 9px;outline:none;transition:border-color .2s,box-shadow .2s}.price-filter input:focus{border-color:#829582;box-shadow:0 0 0 2px #dce5d966}.price-filter button{height:32px;border:1px solid var(--green);border-radius:7px;background:var(--green);color:#fff;padding:0 12px;font-size:10px;font-weight:700;white-space:nowrap;transition:background .2s}.price-filter button:hover{background:#354c3e}.price-filter button.reset-price{background:transparent;color:#5d6d60;border-color:#dcded5}.price-filter button.reset-price:hover{background:#f1f3ed}
+.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.product-card{background:#fffdfa;border:1px solid var(--line);border-radius:15px;padding:9px;position:relative;transition:.25s;min-width:0}.product-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}.product-image{position:relative;overflow:hidden;border-radius:10px;background:#eee6df}.product-image img{display:block;width:100%;aspect-ratio:.94;object-fit:cover;transition:transform .5s}.product-card:hover .product-image img{transform:scale(1.04)}.tag{position:absolute;left:10px;top:10px;background:#e7eee3;color:#334537;border-radius:99px;padding:6px 9px;font-size:9px;font-weight:700}.heart{position:absolute;right:9px;top:9px;width:31px;height:31px;border:0;border-radius:50%;background:#fffdf4e8;font-size:17px;color:#29362f}.heart.liked{color:#c85d66}.product-info{padding:13px 5px 4px}.product-info h3{font-family:Georgia,serif;font-size:18px;font-weight:400;margin:0 0 5px}.product-desc{font-size:11px;color:var(--muted);line-height:1.5;min-height:32px}.price-row{display:flex;align-items:center;gap:9px;margin:10px 0 12px}.price{font-size:14px;font-weight:750}.old-price{font-size:11px;color:#98958f;text-decoration:line-through}.rating{font-size:10px;color:var(--gold);margin-left:auto}.add-btn{width:100%;border:1px solid var(--green);border-radius:8px;background:var(--green);color:#fff;padding:11px;font-size:11px;font-weight:700}.add-btn:hover{background:#354c3e}
+.story{max-width:1200px;margin:76px auto 0;padding:0 26px}.story-inner{background:#1a2920;color:#fff;border-radius:20px;min-height:310px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;position:relative}.story-photo{background:url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1200&q=85') center/cover;min-height:310px}.story-copy{padding:48px 50px;align-self:center}.story-copy .eyebrow{color:#d7b7a7}.story-copy h2{font:400 clamp(30px,3vw,44px)/1.1 Georgia,serif;margin:15px 0}.story-copy p{font-size:12px;color:#d5ded6;line-height:1.8;max-width:420px}.story-copy .primary-btn{margin-top:12px}.newsletter{max-width:1200px;margin:65px auto;padding:0 26px}.newsletter-inner{background:#e9e8dc;border-radius:16px;padding:35px 42px;display:flex;align-items:center;justify-content:space-between;gap:30px}.newsletter h2{font:400 30px Georgia,serif;margin:0 0 8px}.newsletter p{font-size:12px;color:#667066;margin:0}.email-form{display:flex;gap:8px;width:min(440px,100%)}.email-form input{min-width:0;flex:1;border:1px solid #d3d5ca;background:#fffdf8;border-radius:99px;padding:13px 17px;outline:none;font-size:12px}.email-form input:focus{border-color:#657c68}.email-form button{border-radius:99px;padding:13px 18px}
+.footer{background:#142019;color:#f8f4ef;padding:50px 26px 25px}.footer-inner{max-width:1148px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:35px}.footer .brand{color:#fff}.footer .brand small{color:#c5cec5}.footer p{font-size:12px;color:#bdc7be;line-height:1.8;max-width:300px}.footer h4{font-size:12px;margin:6px 0 18px}.footer a:not(.brand){display:block;color:#c5cec5;text-decoration:none;font-size:11px;margin:12px 0}.footer a:hover{color:#fff}.copyright{max-width:1148px;margin:36px auto 0;padding-top:18px;border-top:1px solid #ffffff24;color:#aab6ac;font-size:10px;display:flex;justify-content:space-between;gap:10px}
+.overlay{position:fixed;inset:0;background:#111a14a8;z-index:50;display:none;justify-content:flex-end}.overlay.open{display:flex}.drawer{height:100%;width:min(450px,100%);background:var(--paper);padding:25px;overflow:auto;box-shadow:-15px 0 45px #0002}.drawer-head{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer-head h2{font:400 28px Georgia,serif;margin:0}.close-btn{border:0;background:transparent;font-size:27px;color:var(--ink)}.cart-items{padding:8px 0}.cart-item{display:grid;grid-template-columns:75px 1fr auto;gap:13px;padding:15px 0;border-bottom:1px solid var(--line);align-items:center}.cart-item img{width:75px;height:80px;object-fit:cover;border-radius:9px}.cart-item h4{font:400 16px Georgia,serif;margin:0 0 6px}.cart-item small{color:var(--muted)}.qty{display:flex;align-items:center;gap:10px;margin-top:8px}.qty button{width:24px;height:24px;border:1px solid var(--line);background:white;border-radius:50%}.remove{border:0;background:none;color:#9d6463;font-size:11px}.cart-summary{border-top:1px solid var(--line);padding-top:18px;margin-top:15px}.summary-row{display:flex;justify-content:space-between;font-size:13px;margin:10px 0}.summary-row.total{font-weight:800;font-size:17px}.checkout-btn{width:100%;margin-top:12px;padding:15px}.empty{text-align:center;padding:55px 10px;color:var(--muted);font-size:13px}.empty span{font-size:42px;display:block;margin-bottom:15px}.modal-wrap{position:fixed;inset:0;z-index:60;background:#111a14a8;display:none;place-items:center;padding:18px}.modal-wrap.open{display:grid}.modal{width:min(520px,100%);background:var(--paper);border-radius:18px;padding:28px;max-height:90vh;overflow:auto}.modal h2{font:400 30px Georgia,serif;margin:0 0 8px}.modal p{font-size:12px;color:var(--muted);line-height:1.7}.field{display:grid;gap:6px;margin:14px 0}.field label{font-size:11px;font-weight:700}.field input,.field textarea,.field select{width:100%;border:1px solid var(--line);border-radius:8px;background:#fff;padding:12px;font-size:12px;outline:none}.field input:focus,.field textarea:focus{border-color:#7b927f}.field textarea{resize:vertical;min-height:75px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.notice{display:none;background:#e4efe1;color:#2e5537;border-radius:9px;padding:12px;font-size:12px;margin:12px 0}.notice.show{display:block}.search-box{display:flex;gap:8px;margin:20px 0}.search-box input{flex:1;min-width:0;border:1px solid var(--line);border-radius:99px;padding:12px 15px;background:white}.search-results{font-size:12px;color:var(--muted)}
+@media(max-width:1000px){.nav{gap:15px}.brand{min-width:auto}.nav-links{gap:15px}.product-grid{grid-template-columns:repeat(3,1fr)}.hero{min-height:470px}.hero-copy{padding-left:5vw}.trust-item{padding:2px 12px}.trust-icon{font-size:21px}.footer-inner{grid-template-columns:2fr 1fr 1fr}.footer-inner>div:last-child{display:none}.filters{gap:12px}.filter-thumb{height:160px}}
+@media(max-width:700px){.nav{min-height:66px;padding:0 16px;gap:8px}.brand-mark{font-size:27px}.brand strong{font-size:21px}.brand small{font-size:7px}.nav-links{display:none;position:absolute;left:0;right:0;top:66px;background:#fffdfa;padding:12px 22px 22px;box-shadow:0 18px 20px #0001;flex-direction:column;align-items:flex-start;gap:7px}.nav-links.open{display:flex}.nav-links a{width:100%;padding:10px 0;border-bottom:1px solid var(--line)}.nav-actions{margin-left:auto;gap:0}.icon-btn{width:34px;height:34px;font-size:18px}.menu-toggle{display:block}.nav-actions .user-btn{display:none}.hero{display:block;min-height:600px;background:#e7d5c5}.hero-photo{inset:0;background-position:58% center}.hero-photo:after{background:linear-gradient(0deg,#17231ed9 0%,#17231e20 48%,#eee4d855 100%),linear-gradient(90deg,#eee4d855,transparent 80%)}.hero-copy{padding:45px 25px 28px;background:linear-gradient(180deg,#f3e9dfed 0%,#f3e9df9c 48%,transparent 100%);min-height:600px}.hero h1{font-size:56px;max-width:390px;margin:15px 0}.hero p{max-width:310px;font-size:13px}.hero .primary-btn{margin-top:8px}.hero-note{right:8%;bottom:24px;font-size:19px}.hero-dots{margin-top:22px}.trustbar{grid-template-columns:1fr 1fr;padding:12px 15px;row-gap:8px}.trust-item{padding:10px 8px;border-right:0;border-bottom:1px solid #ffffff20}.trust-item:nth-child(odd){border-right:1px solid #ffffff20}.trust-item:nth-child(n+3){border-bottom:0}.trust-item:first-child{padding-left:8px}.trust-item b{font-size:10px}.trust-item small{font-size:9px}.section{padding:48px 16px 0}.section h2{font-size:29px}.section-head{margin-bottom:19px}.section-sub{font-size:11px}.products-section{padding-top:50px}.filters{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-bottom:20px}.filter{border-radius:12px}.filter-thumb{height:145px}.filter-label{padding:11px 10px;font-size:11px}.filter-arrow{width:24px;height:24px;font-size:15px}.price-filter{gap:7px;padding:8px;margin-bottom:15px}.price-filter .price-field{flex:1 1 calc(50% - 7px);gap:5px}.price-filter input{width:100%;flex:1}.price-filter label{font-size:10px}.price-filter button{flex:1;padding:0 8px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product-card{padding:7px;border-radius:12px}.product-image img{aspect-ratio:.88}.product-info{padding:10px 3px 3px}.product-info h3{font-size:16px}.product-desc{font-size:10px;min-height:30px}.price{font-size:13px}.rating{font-size:9px}.add-btn{padding:10px 5px;font-size:10px}.story{margin:48px auto 0;padding:0 16px}.story-inner{grid-template-columns:1fr}.story-photo{min-height:220px;order:0}.story-copy{padding:28px 25px 32px;order:1}.story-copy h2{font-size:34px}.newsletter{margin:45px auto;padding:0 16px}.newsletter-inner{padding:27px 22px;display:block}.newsletter h2{font-size:27px}.email-form{margin-top:20px}.email-form button{padding:12px 15px}.footer{padding:38px 18px 20px}.footer-inner{grid-template-columns:1fr 1fr;gap:25px}.footer-inner>div:first-child{grid-column:1/-1}.footer-inner>div:last-child{display:block}.copyright{display:block;line-height:2}.form-grid{grid-template-columns:1fr}.drawer{padding:20px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Premium refinement: elegant editorial florist storefront */
+:root{--ink:#17251d;--green:#203b2d;--sage:#e5eadf;--cream:#fbf8f3;--paper:#fffefa;--rose:#b87972;--rose-dark:#985e58;--muted:#777970;--line:#e9e1d7;--gold:#b9955c;--shadow:0 20px 55px rgba(28,43,32,.11)}
+body{background:radial-gradient(ellipse at 8% 14%,rgba(231,219,202,.26),transparent 30%),var(--cream);letter-spacing:.005em}
+.site-header{background:rgba(255,254,250,.92);border-bottom:1px solid rgba(185,149,92,.22);box-shadow:0 5px 24px rgba(30,43,32,.035)}
+.nav{max-width:1320px;min-height:84px;padding-inline:clamp(18px,3vw,42px);gap:clamp(14px,2.5vw,36px)}
+.brand{gap:12px}.brand-mark{color:var(--gold);font-size:35px;text-shadow:0 5px 16px #b9955c22}.brand strong{font-size:clamp(20px,2vw,27px);letter-spacing:-.055em}.brand small{letter-spacing:.24em;font-size:8px}
+.nav-links{gap:clamp(15px,2vw,30px)}.nav-links a{font-size:12px;letter-spacing:.035em;position:relative}.nav-links a:after{content:"";position:absolute;left:0;right:100%;bottom:1px;height:1px;background:var(--gold);transition:right .25s}.nav-links a:hover:after{right:0}
+.icon-btn{transition:background .2s,color .2s,transform .2s}.icon-btn:hover{background:#e9ede4;color:var(--rose-dark);transform:translateY(-1px)}
+.hero{max-width:1500px;min-height:570px;background:#e9dfd2;isolation:isolate}.hero-copy{padding-top:clamp(70px,8vw,108px);padding-bottom:75px;background:linear-gradient(90deg,#f1e8dd 0%,#f1e8ddf5 62%,#f1e8dd00 100%)}.hero-photo{background-position:center 45%;filter:saturate(.88)}.hero-photo:after{background:linear-gradient(90deg,#f1e8dd 0%,#f1e8dd8c 20%,transparent 52%),linear-gradient(0deg,#15251c30,transparent 48%)}
+.eyebrow{letter-spacing:.22em;font-size:10px;color:#6d796b}.hero h1{font-size:clamp(52px,6vw,86px);line-height:.98;letter-spacing:-.065em;margin:23px 0}.hero h1 em{color:#a96c66}.hero p{font-size:14px;line-height:1.95;color:#535b51;max-width:390px}.primary-btn{background:var(--green);border:1px solid var(--green);box-shadow:0 9px 22px rgba(32,59,45,.15);padding:15px 25px;letter-spacing:.08em;font-size:10px}.primary-btn:hover{background:#314f3d;border-color:#314f3d}.hero .primary-btn{margin-top:23px}.hero-dots{margin-top:39px}.hero-note{right:8%;bottom:42px;font-size:23px}
+.section{max-width:1320px;padding:82px clamp(18px,3vw,42px) 10px}.products-section{padding-top:80px}.section-head{margin-bottom:29px}.section h2{font-size:clamp(32px,3vw,42px);letter-spacing:-.055em}.section-sub{font-size:12px;letter-spacing:.025em;margin-top:10px}.text-link{font-size:10px;letter-spacing:.13em;color:var(--rose-dark)}
+.filters{gap:18px;margin-bottom:30px}.filter{border-radius:5px;border-color:#e4dbd0;box-shadow:0 8px 25px rgba(34,45,35,.035);text-align:left;position:relative}.filter:before{content:"";position:absolute;inset:0 0 65px;z-index:1;pointer-events:none;background:linear-gradient(180deg,transparent 55%,rgba(18,32,23,.24))}.filter-thumb{height:clamp(165px,20vw,250px);object-fit:cover;transition:transform .65s cubic-bezier(.2,.7,.2,1),filter .3s}.filter:hover .filter-thumb{transform:scale(1.045);filter:saturate(1.07)}.filter-label{position:relative;z-index:2;padding:16px 17px;font-size:13px;font-weight:700;letter-spacing:.005em;direction:rtl}.filter-arrow{background:#f1ece3;color:var(--green);font-size:18px;transition:transform .2s,background .2s}.filter:hover .filter-arrow{transform:rotate(45deg)}.filter.active{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 16px 35px rgba(32,59,45,.09)}.filter.active .filter-arrow{background:var(--green)}
+.price-filter{border-radius:5px;padding:12px 14px;gap:12px;background:rgba(255,254,250,.85);border-color:#e7dfd4;box-shadow:none}.price-filter label{font-size:11px}.price-filter input{height:36px;width:100px;border-radius:4px;font-size:12px;background:#fffefa}.price-filter button{height:36px;border-radius:4px;padding-inline:16px;font-size:10px;letter-spacing:.035em}.price-filter button.reset-price{background:transparent;border-color:#d7d5c9;color:#5c685c}
+.product-grid{gap:22px}.product-card{padding:9px;border-radius:5px;border-color:#e8e0d6;background:rgba(255,254,250,.96);box-shadow:0 5px 20px rgba(35,45,36,.025);transition:transform .3s,box-shadow .3s,border-color .3s}.product-card:hover{transform:translateY(-5px);border-color:#d9c7ae;box-shadow:0 18px 42px rgba(35,45,36,.1)}.product-image{border-radius:3px;background:#f1ebe3}.product-image img{aspect-ratio:.9;transition:transform .7s cubic-bezier(.2,.7,.2,1)}.tag{border-radius:2px;background:#f7f1e5;color:#4b5a49;font-size:9px;letter-spacing:.05em}.heart{box-shadow:0 3px 12px #1b2b2010;transition:transform .2s,color .2s}.heart:hover{transform:scale(1.08)}.product-info{padding:15px 5px 5px}.product-info h3{font-size:19px;line-height:1.25;margin-bottom:7px}.product-desc{line-height:1.65;color:#777970}.price-row{margin:13px 0 14px;gap:8px}.price{font-size:14px;color:#24372e}.old-price{color:#a6a098}.rating{font-size:10px}.add-btn{border-radius:3px;padding:12px 9px;background:var(--green);border-color:var(--green);font-size:10px;letter-spacing:.1em;transition:background .2s,transform .2s}.add-btn:hover{background:#345440;transform:translateY(-1px)}
+.story{max-width:1320px;margin-top:92px;padding-inline:clamp(18px,3vw,42px)}.story-inner{border-radius:4px;background:#1c3024;grid-template-columns:1.04fr .96fr;box-shadow:0 22px 55px rgba(24,38,28,.12)}.story-photo{min-height:360px;filter:saturate(.82)}.story-copy{padding:clamp(32px,5vw,66px)}.story-copy h2{font-size:clamp(34px,4vw,51px);letter-spacing:-.045em}.story-copy p{font-size:12px;line-height:2;color:#d8dfd7}.story-copy .primary-btn{background:#b9955c;border-color:#b9955c;color:#17251d;box-shadow:none}.story-copy .primary-btn:hover{background:#d0b27c;border-color:#d0b27c}
+.newsletter{max-width:1320px;margin:78px auto;padding-inline:clamp(18px,3vw,42px)}.newsletter-inner{border-radius:4px;padding:clamp(26px,4vw,46px);background:#efeee5;border:1px solid #e3e0d4}.newsletter h2{font-size:clamp(27px,3vw,36px);letter-spacing:-.045em}.newsletter p{line-height:1.7}.email-form input{border-radius:3px;padding:14px 17px}.email-form button{border-radius:3px}
+.footer{background:#17251d;padding:58px clamp(18px,3vw,42px) 25px}.footer-inner{max-width:1240px}.footer .brand{color:#fff}.footer .brand-mark{color:#c9ab77}.footer-inner>div:first-child p{max-width:300px;line-height:1.9;color:#c6cec6;font-size:12px}.footer h4{font-size:10px;letter-spacing:.16em;color:#c9ab77}.footer-inner>div:not(:first-child) a{font-size:12px;color:#d9ded8;transition:color .2s}.footer-inner>div a:hover{color:#d9b77b}.copyright{border-top:1px solid #ffffff20;margin-top:35px;padding-top:20px;font-size:10px;color:#aeb9ae;letter-spacing:.035em}
+.drawer,.modal{border-radius:4px}.drawer-head{border-bottom:1px solid var(--line);padding-bottom:16px}.close-btn{border-radius:50%;transition:background .2s}.close-btn:hover{background:#e8ece4}.field input,.field textarea,.search-box input{border-radius:4px}.notice{border-radius:4px}
+@media(max-width:1000px){.hero{min-height:500px}.filters{gap:13px}.filter-thumb{height:clamp(150px,19vw,190px)}.product-grid{gap:14px}.story-photo{min-height:310px}}
+@media(max-width:700px){.nav{min-height:68px}.brand strong{font-size:19px}.brand small{font-size:6.5px;letter-spacing:.18em}.nav-links{top:68px}.hero{min-height:580px}.hero-copy{padding:48px 24px 30px;min-height:580px;background:linear-gradient(180deg,#f1e8ddf2 0%,#f1e8ddbb 42%,transparent 100%)}.hero h1{font-size:clamp(48px,12vw,61px);margin:17px 0}.hero p{line-height:1.8;max-width:300px}.hero .primary-btn{margin-top:14px;padding:14px 18px}.hero-note{font-size:19px;bottom:24px}.section{padding:52px 15px 0}.products-section{padding-top:54px}.section h2{font-size:30px}.section-head{align-items:flex-end;gap:8px}.section-sub{max-width:230px;line-height:1.6}.text-link{font-size:9px}.filters{gap:10px}.filter{border-radius:4px}.filter:before{inset:0 0 56px}.filter-thumb{height:clamp(128px,38vw,175px)}.filter-label{padding:10px 9px;font-size:10.5px;gap:5px}.filter-arrow{width:22px;height:22px;font-size:14px}.price-filter{padding:10px;gap:8px}.price-filter .price-field{flex:1 1 calc(50% - 8px)}.price-filter input{height:34px}.price-filter button{height:34px;font-size:9px}.product-grid{gap:10px}.product-card{padding:6px;border-radius:4px}.product-image{border-radius:2px}.product-info{padding:10px 3px 3px}.product-info h3{font-size:16px}.product-desc{font-size:10px;line-height:1.5}.price-row{gap:5px;flex-wrap:wrap}.price{font-size:12px}.rating{font-size:8px}.add-btn{font-size:9px;padding:10px 4px;letter-spacing:.06em}.story{margin-top:55px;padding-inline:15px}.story-inner{grid-template-columns:1fr}.story-photo{min-height:225px}.story-copy{padding:30px 24px 32px}.story-copy h2{font-size:35px}.newsletter{margin:52px auto;padding-inline:15px}.newsletter-inner{padding:26px 20px}.email-form{gap:6px}.email-form input{padding:12px}.email-form button{padding:12px 11px;font-size:9px}.footer{padding:40px 17px 20px}.footer-inner{gap:22px}.copyright{font-size:9px}}
+@media(prefers-reduced-motion:reduce){.filter-thumb,.product-image img,.product-card,.filter,.icon-btn{transition:none!important}}
+
+
+/* Romantic Burgundy + Cream palette — visual styling only */
+:root{
+  --burgundy:#701426;
+  --burgundy-deep:#4c0b19;
+  --wine:#8f2638;
+  --cream:#fff7ed;
+  --warm-cream:#f7eadb;
+  --rose-beige:#d8b7a2;
+  --soft-blush:#f3e0dd;
+  --text-ink:#3b2024;
+  --muted-ink:#846b6c;
+  --gold-muted:#c6a06a;
+}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text-ink)}
+.site-header{background:rgba(255,247,237,.94);border-bottom:1px solid rgba(112,20,38,.13);backdrop-filter:blur(16px)}
+.brand strong{color:var(--burgundy-deep);letter-spacing:.08em}
+.brand-mark{color:var(--wine)}
+.brand small,.nav-links a{color:var(--muted-ink)}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--burgundy)}
+.icon-btn{color:var(--burgundy);border-color:rgba(112,20,38,.18)}
+.icon-btn:hover{background:var(--soft-blush);border-color:var(--rose-beige)}
+.cart-count{background:var(--burgundy);color:#fff7ed}
+.hero{background:linear-gradient(110deg,rgba(255,247,237,.97) 0%,rgba(255,247,237,.88) 39%,rgba(112,20,38,.08) 100%)}
+.hero-copy .eyebrow,.eyebrow{color:var(--wine);letter-spacing:.16em}
+.hero h1,.section-head h2,.story-copy h2{color:var(--burgundy-deep)}
+.hero h1 em{color:var(--wine)}
+.hero-copy p,.section-sub{color:var(--muted-ink)}
+.hero-note{color:var(--burgundy);background:rgba(255,247,237,.8);border:1px solid rgba(112,20,38,.13);border-radius:18px;padding:14px 18px}
+.primary-btn{background:var(--burgundy);color:var(--cream);border:1px solid var(--burgundy);box-shadow:0 8px 24px rgba(112,20,38,.15);transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+.primary-btn:hover{background:var(--burgundy-deep);box-shadow:0 12px 28px rgba(112,20,38,.22);transform:translateY(-2px)}
+.section{background:var(--cream)}
+.section-head{border-color:rgba(112,20,38,.13)}
+.text-link{color:var(--wine)}
+.filters{gap:14px}
+.filter{background:#fffaf4;border:1px solid #ead8ce;color:var(--burgundy-deep);border-radius:16px;box-shadow:0 5px 18px rgba(76,11,25,.035);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,background .22s ease}
+.filter:hover{transform:translateY(-3px);border-color:var(--rose-beige);box-shadow:0 10px 24px rgba(76,11,25,.09)}
+.filter.active{background:#f4e3df;border-color:var(--burgundy);box-shadow:0 8px 22px rgba(112,20,38,.10)}
+.filter-thumb{border-radius:12px}
+.filter-label,.filter-arrow{color:var(--burgundy)}
+.product-card{background:#fffaf5;border:1px solid rgba(112,20,38,.10);border-radius:18px;overflow:hidden;box-shadow:0 7px 24px rgba(76,11,25,.045);transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 15px 34px rgba(76,11,25,.11);border-color:#d9b9ad}
+.product-image{background:var(--warm-cream)}
+.product-card h3,.product-name{color:var(--burgundy-deep)}
+.price,.product-price{color:var(--burgundy)}
+.old-price{color:#a68f8a}
+.product-card .icon-btn,.favorite-btn{background:#fff7ed;color:var(--burgundy);border:1px solid #ead8ce}
+.product-card .icon-btn:hover,.favorite-btn:hover{background:var(--soft-blush)}
+.story{background:var(--warm-cream)}
+.story-copy p{color:var(--muted-ink)}
+.newsletter{background:linear-gradient(135deg,#6f1426,#4c0b19);color:#fff7ed}
+.newsletter h2,.newsletter p{color:#fff7ed}
+.email-form input{background:#fffaf4;color:var(--text-ink);border:1px solid #e5cfc5}
+.email-form .primary-btn{background:#fff7ed;color:var(--burgundy);border-color:#fff7ed}
+.footer{background:#3b2024;color:#f9e9df}
+.footer .brand strong,.footer .brand small,.footer h4{color:#fff2e7}
+.footer a,.footer p,.copyright{color:#e1c9c1}
+.footer a:hover{color:#fff7ed}
+.overlay,.modal-wrap{background:rgba(45,12,20,.48)}
+.drawer,.modal{background:#fff8f0;color:var(--text-ink);border-color:#ead8ce}
+.drawer-head,.modal-head{border-color:#ead8ce}
+.close-btn{color:var(--burgundy)}
+input,textarea,select{accent-color:var(--burgundy)}
+:focus-visible{outline-color:var(--wine)}
+@media(max-width:700px){
+  .filters{gap:10px}
+  .filter{border-radius:13px}
+  .product-card{border-radius:14px}
+  .hero-note{padding:10px 12px}
+}
+
+
+/* Deep Burgundy Luxury Theme — dark site, light typography */
+:root{
+  --burgundy:#701426;
+  --burgundy-deep:#350711;
+  --wine:#8f2638;
+  --wine-mid:#57101f;
+  --cream:#fff4e8;
+  --warm-cream:#f3dfd3;
+  --rose-beige:#d8b7a2;
+  --soft-blush:#6c2635;
+  --text-ink:#fff1e7;
+  --muted-ink:#d7bfc0;
+  --gold-muted:#c6a06a;
+}
+html,body{background:#350711!important;color:#fff1e7!important}
+body{background:linear-gradient(180deg,#350711 0%,#4a0b1b 45%,#2b060e 100%)!important}
+.site-header{background:rgba(47,5,15,.96)!important;border-bottom:1px solid rgba(214,174,132,.25)!important;backdrop-filter:blur(18px)}
+.brand strong,.brand-mark{color:#f8e7d6!important}
+.brand small,.nav-links a{color:#d9bfc0!important}
+.nav-links a:hover,.nav-links a:focus-visible{color:#fff4e8!important}
+.icon-btn{color:#fff0e5!important;background:#501020!important;border-color:rgba(220,179,137,.28)!important}
+.icon-btn:hover{background:#7b1c31!important;border-color:#d8b17d!important}
+.cart-count{background:#d0a66b!important;color:#350711!important}
+.hero{background:linear-gradient(110deg,rgba(53,7,17,.98) 0%,rgba(75,10,27,.88) 45%,rgba(112,20,38,.45) 100%)!important;color:#fff1e7}
+.hero-copy .eyebrow,.eyebrow{color:#e0bd8d!important;letter-spacing:.16em}
+.hero h1,.section-head h2,.story-copy h2{color:#fff1e7!important}
+.hero h1 em{color:#e4b9b4!important}
+.hero-copy p,.section-sub{color:#d7bfc0!important}
+.hero-note{color:#fff0e5!important;background:rgba(67,9,23,.86)!important;border:1px solid rgba(214,174,132,.25)!important;border-radius:18px;padding:14px 18px}
+.primary-btn{background:#a42b43!important;color:#fff4e8!important;border:1px solid #c58b7f!important;box-shadow:0 8px 26px rgba(15,0,4,.28)!important;transition:transform .22s ease,background .22s ease,box-shadow .22s ease}
+.primary-btn:hover{background:#c03b53!important;box-shadow:0 12px 30px rgba(15,0,4,.36)!important;transform:translateY(-2px)}
+.section,.products-section{background:transparent!important;color:#fff1e7!important}
+.section-head{border-color:rgba(220,179,137,.22)!important}
+.text-link{color:#e5c08e!important}
+.filters{gap:14px}
+.filter{background:#4a0d1b!important;border:1px solid rgba(220,179,137,.25)!important;color:#fff0e5!important;border-radius:16px;box-shadow:0 7px 22px rgba(10,0,3,.2)!important;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease,background .22s ease}
+.filter:hover{transform:translateY(-3px);background:#5a1022!important;border-color:#d2a16f!important;box-shadow:0 12px 28px rgba(10,0,3,.32)!important}
+.filter.active{background:#762039!important;border-color:#d4ad7b!important;box-shadow:0 8px 24px rgba(10,0,3,.3)!important}
+.filter-thumb{border-radius:12px}
+.filter-label,.filter-arrow{color:#fff0e5!important}
+.product-card{background:#4a0d1b!important;border:1px solid rgba(220,179,137,.22)!important;border-radius:18px;overflow:hidden;box-shadow:0 8px 26px rgba(10,0,3,.25)!important;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;color:#fff1e7!important}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 16px 36px rgba(10,0,3,.4)!important;border-color:#d1a271!important}
+.product-image{background:#5a1022!important}
+.product-card h3,.product-name{color:#fff1e7!important}
+.price,.product-price{color:#e8c18c!important}
+.old-price{color:#c6a7a8!important}
+.product-card .icon-btn,.favorite-btn{background:#5a1022!important;color:#fff0e5!important;border:1px solid rgba(220,179,137,.25)!important}
+.product-card .icon-btn:hover,.favorite-btn:hover{background:#7b1c31!important}
+.story{background:linear-gradient(135deg,#4a0b1b,#2d060e)!important;color:#fff1e7!important;border-top:1px solid rgba(220,179,137,.16);border-bottom:1px solid rgba(220,179,137,.16)}
+.story-copy p{color:#d7bfc0!important}
+.newsletter{background:linear-gradient(135deg,#23040b,#681326 60%,#350711)!important;color:#fff4e8!important;border-top:1px solid rgba(220,179,137,.25)}
+.newsletter h2,.newsletter p{color:#fff4e8!important}
+.email-form input{background:#fff4e8!important;color:#350711!important;border:1px solid #d8b7a2!important}
+.email-form .primary-btn{background:#c6a06a!important;color:#350711!important;border-color:#c6a06a!important}
+.footer{background:#210309!important;color:#f9e9df!important;border-top:1px solid rgba(220,179,137,.24)}
+.footer .brand strong,.footer .brand small,.footer h4{color:#fff2e7!important}
+.footer a,.footer p,.copyright{color:#d9bfc0!important}
+.footer a:hover{color:#fff7ed!important}
+.overlay,.modal-wrap{background:rgba(12,0,4,.72)!important}
+.drawer,.modal{background:#3a0813!important;color:#fff1e7!important;border-color:rgba(220,179,137,.26)!important}
+.drawer-head,.modal-head{border-color:rgba(220,179,137,.22)!important}
+.close-btn{color:#fff0e5!important}
+input,textarea,select{accent-color:#c6a06a}
+input:not([type=checkbox]):not([type=radio]),textarea,select{background:#4a0d1b;color:#fff1e7;border-color:rgba(220,179,137,.32)}
+input::placeholder,textarea::placeholder{color:#c6a7a8}
+:focus-visible{outline-color:#e4bd84}
+@media(max-width:700px){
+  .filters{gap:10px}
+  .filter{border-radius:13px}
+  .product-card{border-radius:14px}
+  .hero-note{padding:10px 12px}
+  .nav-links{background:#350711!important;border-color:rgba(220,179,137,.22)!important}
+}
+
+
+/* Full-screen romantic flower intro */
+.flower-intro{position:fixed;inset:0;z-index:99999;display:grid;place-items:center;overflow:hidden;background:#350711;color:#fff4e8;transition:opacity .7s ease,visibility .7s ease}
+.flower-intro.is-leaving{opacity:0;visibility:hidden;pointer-events:none}
+.intro-backdrop{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,rgba(143,38,56,.48),rgba(28,3,9,.97) 78%)}
+.intro-frame{position:relative;width:min(92vw,1040px);aspect-ratio:1.58;max-height:72vh;border:5px solid rgba(235,211,190,.2);border-radius:24px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,.48),0 0 0 1px rgba(213,166,126,.3);background:#4a0d1b;animation:introRise .9s cubic-bezier(.2,.8,.2,1) both}
+.intro-image{position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(28,3,9,.62),rgba(48,5,16,.15) 55%,rgba(28,3,9,.38)),url('intro/intro site.png');background-size:cover;background-position:center 48%;transform:scale(1.04);animation:introZoom 8s ease-out both}
+.intro-frame:after{content:"";position:absolute;inset:0;border-radius:18px;box-shadow:inset 0 0 90px rgba(19,0,5,.45);pointer-events:none}
+.intro-content{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4%}
+.intro-flower-mark{font-family:Georgia,serif;font-size:clamp(24px,4vw,48px);color:#e0bd8d;opacity:0;animation:introFade .7s ease 0.3s forwards}
+.intro-wordmark{font-family:Georgia,'Times New Roman',serif;font-weight:700;letter-spacing:.11em;line-height:1.05;font-size:clamp(28px,8.2vw,100px);color:#fff9f0;text-shadow:0 4px 28px rgba(0,0,0,.4);white-space:nowrap;max-width:100%}
+.intro-caret{display:inline-block;color:#e5bd86;margin-inline-start:4px;animation:caretBlink .75s step-end infinite;font-weight:400}
+.intro-tagline{font-size:clamp(10px,1.5vw,16px);letter-spacing:.06em;color:#fff0e5;margin:clamp(12px,2vw,22px) 0 0;opacity:0;animation:introFade .7s ease 1s forwards}
+.intro-bottom{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:14px;padding:18px 24px;background:linear-gradient(0deg,rgba(24,2,8,.75),rgba(24,2,8,.05));font-size:10px;letter-spacing:.14em;color:#f7e5d6}
+.intro-mini-label{white-space:nowrap}
+.intro-mini-line{height:1px;background:rgba(247,229,214,.55);flex:1}
+.intro-mini-caption{letter-spacing:.04em;text-transform:none}
+.intro-skip{position:absolute;top:max(22px,env(safe-area-inset-top));right:max(22px,env(safe-area-inset-right));z-index:2;border:1px solid rgba(255,244,232,.28);border-radius:999px;background:rgba(34,3,10,.55);backdrop-filter:blur(10px);color:#fff4e8;padding:10px 16px;font:inherit;font-size:12px;cursor:pointer}
+.intro-skip span{margin-inline-start:8px;color:#e0bd8d}
+.intro-hint{position:absolute;bottom:max(26px,env(safe-area-inset-bottom));left:0;right:0;display:flex;align-items:center;justify-content:center;gap:12px;color:#e7c9c2;font-size:12px;letter-spacing:.06em;opacity:0;animation:introFade .7s ease 1.8s forwards}
+.intro-hint-arrow{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border:1px solid rgba(231,201,194,.45);border-radius:50%;animation:introBob 1.5s ease-in-out infinite}
+@keyframes introRise{from{opacity:0;transform:translateY(20px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes introZoom{from{transform:scale(1.12)}to{transform:scale(1.02)}}
+@keyframes introFade{to{opacity:1}}
+@keyframes caretBlink{50%{opacity:0}}
+@keyframes introBob{50%{transform:translateY(4px)}}
+@media(max-width:600px){
+ .intro-frame{width:94vw;aspect-ratio:.78;max-height:64vh;border-width:4px;border-radius:18px}
+ .intro-image{background-position:54% center}
+ .intro-content{padding:6% 4%}
+ .intro-wordmark{letter-spacing:.06em;font-size:clamp(25px,9vw,52px)}
+ .intro-bottom{padding:12px 13px;gap:8px;font-size:8px}
+ .intro-mini-caption{max-width:42%;text-align:right}
+ .intro-hint{bottom:calc(max(24px,env(safe-area-inset-bottom)) + 8px)}
+}
+@media(prefers-reduced-motion:reduce){.flower-intro *{animation:none!important}.intro-flower-mark,.intro-tagline,.intro-hint{opacity:1}}
+
+body.intro-lock{overflow:hidden}
+
+
+/* Use the supplied intro image as one full-screen background (no stacked cards) */
+.flower-intro{display:flex!important;align-items:center;justify-content:center;background:#350711!important}
+.intro-backdrop{background:linear-gradient(180deg,rgba(35,3,10,.18),rgba(35,3,10,.42))!important}
+.intro-frame{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;overflow:hidden!important}
+.intro-image{inset:0!important;background-image:linear-gradient(180deg,rgba(28,3,9,.22),rgba(28,3,9,.28)),url('intro/intro site.png')!important;background-size:cover!important;background-position:center!important;transform:none!important;animation:introZoom 12s ease-out both}
+.intro-frame:after{display:none!important}
+.intro-content{padding:8vw!important}
+.intro-wordmark{font-size:clamp(34px,9vw,112px)!important;letter-spacing:.08em!important;text-shadow:0 4px 32px rgba(0,0,0,.7)!important}
+.intro-tagline{font-size:clamp(11px,1.7vw,17px)!important;text-shadow:0 2px 12px rgba(0,0,0,.8)}
+.intro-bottom{padding:20px clamp(18px,4vw,48px)!important;background:linear-gradient(0deg,rgba(24,2,8,.55),transparent)!important}
+.intro-skip{background:rgba(48,5,16,.65)!important}
+@media(max-width:600px){
+ .intro-frame{width:100%!important;height:100%!important;max-height:none!important;aspect-ratio:auto!important}
+ .intro-image{background-position:center!important;background-size:cover!important}
+ .intro-content{padding:7vw 4vw!important}
+ .intro-wordmark{font-size:clamp(28px,9vw,54px)!important;letter-spacing:.045em!important}
+ .intro-bottom{padding:14px 14px!important}
+}
+
+
+/* The intro replaces the old hero as the opening screen */
+
+/* Keep the flower image as the permanent homepage hero after the intro closes */
+.hero{display:flex!important;position:relative;min-height:min(86vh,820px);background:#350711!important;overflow:hidden}
+.hero .hero-photo{position:absolute!important;inset:0!important;background-image:linear-gradient(90deg,rgba(32,3,10,.78),rgba(32,3,10,.36) 55%,rgba(32,3,10,.18)),url('intro site.png');background-size:cover!important;background-position:center!important;opacity:1!important}
+.hero .hero-copy{position:relative;z-index:2;color:#fff4e8!important}
+.hero .hero-copy h1,.hero .hero-copy p{color:#fff4e8!important;text-shadow:0 2px 18px rgba(0,0,0,.4)}
+.hero .hero-copy h1 em{color:#f0c5c4!important}
+.hero .eyebrow{color:#e5c08e!important}
+.hero .hero-note{z-index:2;background:rgba(53,7,17,.78)!important;color:#fff4e8!important;border-color:rgba(220,179,137,.35)!important}
+.hero .hero-dots i{border-color:#fff4e8!important}
+@media(max-width:700px){.hero{min-height:calc(100svh - 90px)!important}.hero .hero-photo{background-position:center!important}.hero .hero-copy{max-width:100%;padding:28px 22px!important}.hero .hero-copy h1{font-size:clamp(42px,12vw,68px)!important}}
+
+
+
+/* Refined Arabic-friendly typography and polished cart icon */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap');
+body{font-family:'Cairo',Tahoma,Arial,sans-serif}
+h1,h2,h3,.brand strong,.intro-wordmark{font-family:'Playfair Display','Cairo',Georgia,serif}
+p,button,input,textarea,select,.nav-links,.filter,.product-card,.section-sub,.hero-copy{font-family:'Cairo',Tahoma,Arial,sans-serif}
+.brand strong{font-family:'Playfair Display',Georgia,serif!important;letter-spacing:.075em!important;font-size:clamp(17px,2.2vw,27px)!important}
+.brand small{font-family:'Cairo',Tahoma,Arial,sans-serif!important;letter-spacing:.18em!important;font-size:10px!important}
+.nav{gap:clamp(12px,2vw,26px)}
+.nav-actions{gap:8px}
+.icon-btn.cart-icon-btn{position:relative;display:inline-flex;align-items:center;justify-content:center}
+.cart-icon-btn svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.cart-icon-btn .cart-count{position:absolute;top:-4px;right:-3px;min-width:17px;height:17px;display:flex;align-items:center;justify-content:center;border-radius:50%;font-size:10px;font-weight:700;line-height:1;padding:0 4px}
+button,.primary-btn,.filter,.icon-btn{font-weight:700;letter-spacing:.015em}
+.section-head h2,.story-copy h2,.newsletter h2{letter-spacing:-.025em}
+.product-card h3,.product-name{font-family:'Cairo',Tahoma,Arial,sans-serif!important;font-weight:700!important;line-height:1.55}
+.price,.product-price{font-weight:800;letter-spacing:.01em}
+.filter-label{font-family:'Cairo',Tahoma,Arial,sans-serif!important;font-weight:700!important;line-height:1.5}
+.hero-copy p{line-height:1.95}
+@media(max-width:700px){
+ .brand strong{font-size:clamp(13px,4vw,19px)!important;letter-spacing:.045em!important}
+ .brand small{font-size:8px!important;letter-spacing:.1em!important}
+ .nav-actions{gap:5px}
+ .icon-btn.cart-icon-btn svg{width:20px;height:20px}
+ .cart-icon-btn .cart-count{min-width:15px;height:15px;font-size:9px}
+}
+
+
+/* Use the supplied flower image in the "Made by hand" story section */
+.story-photo{background-image:linear-gradient(180deg,rgba(25,4,10,.04),rgba(25,4,10,.12)),url('intro site.png')!important;background-size:cover!important;background-position:center!important}
+
+
+/* Smooth mobile navigation menu animation */
+.nav-links{transform-origin:top right;transition:opacity .28s ease,transform .34s cubic-bezier(.2,.8,.2,1),visibility .28s ease}
+@media(max-width:700px){
+  .nav-links{display:flex!important;flex-direction:column;gap:0;position:absolute;top:calc(100% + 8px);right:14px;left:14px;z-index:1000;padding:10px;border-radius:18px;border:1px solid rgba(220,179,137,.28);background:linear-gradient(145deg,#4a0d1b,#27050d)!important;box-shadow:0 20px 45px rgba(0,0,0,.38);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-12px) scale(.97)}
+  .nav-links.open{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
+  .nav-links a{padding:14px 16px;border-radius:10px;color:#fff1e7!important;opacity:0;transform:translateX(12px);transition:opacity .24s ease,transform .28s ease,background .2s ease}
+  .nav-links.open a{opacity:1;transform:translateX(0)}
+  .nav-links.open a:nth-child(1){transition-delay:.04s}
+  .nav-links.open a:nth-child(2){transition-delay:.08s}
+  .nav-links.open a:nth-child(3){transition-delay:.12s}
+  .nav-links.open a:nth-child(4){transition-delay:.16s}
+  .nav-links.open a:nth-child(5){transition-delay:.20s}
+  .nav-links a:hover{background:rgba(220,179,137,.12)}
+  .menu-toggle{transition:transform .28s ease,background .25s ease}
+  .menu-toggle.is-open{transform:rotate(90deg);background:#7b1c31!important}
+}
+@media(prefers-reduced-motion:reduce){
+ .nav-links,.nav-links a,.menu-toggle{transition:none!important;transform:none!important}
+}
+
+
+/* Elegant permanent flower hero: supplied image + refined shop wordmark */
+.hero .hero-photo{background-size:cover!important;background-position:center!important;opacity:1!important}
+.hero .hero-copy{max-width:640px!important}
+.hero .hero-copy .eyebrow{font-family:'Cairo',Tahoma,sans-serif!important;font-size:clamp(10px,1.2vw,13px)!important;letter-spacing:.18em!important;color:#e6c38f!important;text-transform:uppercase}
+.hero .hero-copy h1{font-family:'Playfair Display',Georgia,serif!important;font-size:clamp(42px,7vw,86px)!important;line-height:1.04!important;letter-spacing:-.035em!important;color:#fff5ea!important}
+.hero .hero-copy h1 em{color:#f0c3c0!important;font-style:italic}
+.hero .hero-copy p{font-family:'Cairo',Tahoma,sans-serif!important;font-size:clamp(13px,1.35vw,17px)!important;line-height:1.95!important;color:#fff0e7!important;max-width:490px;text-shadow:0 2px 16px rgba(0,0,0,.35)}
+.hero .hero-copy .primary-btn{border-radius:999px!important;padding:15px 28px!important}
+.hero .hero-note{font-family:'Playfair Display',Georgia,serif!important;font-size:clamp(16px,2vw,24px)!important;font-style:italic!important;transform:rotate(-3deg);border-radius:18px!important}
+@media(max-width:700px){
+ .hero .hero-copy{padding:28px 22px!important}
+ .hero .hero-copy h1{font-size:clamp(39px,11vw,62px)!important}
+ .hero .hero-note{max-width:85%;margin:0 18px 24px auto!important}
+}
+
+
+/* Reference-inspired centered luxury wordmark */
+.hero .hero-copy{width:100%!important;max-width:100%!important;display:flex!important;flex-direction:column!important;align-items:center!important;text-align:center!important;margin-inline:auto!important}
+.hero .hero-copy .eyebrow{margin-bottom:18px!important;text-align:center!important}
+.hero .hero-copy h1{font-family:'Playfair Display','Bodoni MT',Didot,Georgia,serif!important;font-weight:700!important;font-size:clamp(58px,11vw,150px)!important;letter-spacing:.035em!important;line-height:.92!important;text-transform:uppercase!important;text-align:center!important;margin:0 auto 18px!important;text-shadow:0 4px 30px rgba(0,0,0,.48)!important;max-width:100%!important}
+.hero .hero-copy h1 em{font-style:normal!important;color:#fff4e8!important}
+.hero .hero-copy p{font-family:'Cairo',Arial,sans-serif!important;font-size:clamp(13px,1.7vw,21px)!important;letter-spacing:.025em!important;line-height:1.65!important;text-align:center!important;margin:0 auto 28px!important;max-width:760px!important;text-shadow:0 3px 16px rgba(0,0,0,.75)!important}
+.hero .hero-copy .primary-btn{margin-inline:auto!important}
+.hero .hero-photo{background-image:linear-gradient(180deg,rgba(25,2,8,.24),rgba(25,2,8,.42)),url('intro site.png')!important;background-size:cover!important;background-position:center!important}
+@media(max-width:700px){
+ .hero .hero-copy{padding:30px 16px!important}
+ .hero .hero-copy .eyebrow{font-size:10px!important;letter-spacing:.13em!important;margin-bottom:14px!important}
+ .hero .hero-copy h1{font-size:clamp(42px,12vw,76px)!important;letter-spacing:.015em!important;line-height:.98!important;margin-bottom:15px!important}
+ .hero .hero-copy p{font-size:14px!important;line-height:1.7!important;margin-bottom:22px!important}
+}
+
+
+/* Final hero correction: centered brand, vivid image, no white wash */
+.hero{position:relative!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:min(86vh,820px)!important;background:#350711!important;isolation:isolate}
+.hero .hero-photo{position:absolute!important;inset:0!important;z-index:-1!important;display:block!important;background-image:linear-gradient(180deg,rgba(35,3,10,.28),rgba(35,3,10,.34)),url('intro site.png')!important;background-size:cover!important;background-position:center!important;opacity:1!important;filter:none!important}
+.hero:before,.hero:after{background:none!important;opacity:0!important;content:none!important}
+.hero .hero-inner,.hero .container,.hero .hero-content{width:100%!important;max-width:1200px!important;margin-inline:auto!important;display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important}
+.hero .hero-copy{width:100%!important;max-width:100%!important;margin:0 auto!important;padding:clamp(24px,5vw,64px)!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;text-align:center!important;background:transparent!important}
+.hero .hero-copy .eyebrow{color:#e5c08e!important;text-shadow:0 2px 12px rgba(0,0,0,.9)!important}
+.hero .hero-copy h1{display:block!important;width:100%!important;max-width:100%!important;margin:0 auto 18px!important;text-align:center!important;font-family:'Playfair Display','Bodoni MT',Didot,Georgia,serif!important;font-size:clamp(40px,8.5vw,118px)!important;line-height:1.02!important;letter-spacing:.015em!important;white-space:normal!important;overflow-wrap:anywhere!important;color:#fff8ef!important;text-shadow:0 4px 28px rgba(0,0,0,.75)!important}
+.hero .hero-copy h1 em{color:#fff8ef!important}
+.hero .hero-copy p{width:100%!important;max-width:760px!important;margin:0 auto 26px!important;text-align:center!important;color:#fff5ed!important;text-shadow:0 2px 16px rgba(0,0,0,.95)!important;font-size:clamp(13px,1.5vw,20px)!important}
+.hero .hero-copy .primary-btn{align-self:center!important;margin-inline:auto!important}
+.hero .hero-note{position:absolute!important;right:clamp(14px,5vw,70px)!important;bottom:clamp(16px,4vw,48px)!important;background:rgba(53,7,17,.68)!important;color:#fff5ed!important;border:1px solid rgba(229,192,142,.5)!important;box-shadow:0 10px 35px rgba(0,0,0,.25)!important}
+@media(min-width:701px){
+ .hero .hero-copy h1{font-size:clamp(66px,9vw,132px)!important;letter-spacing:.025em!important}
+}
+@media(max-width:700px){
+ .hero{min-height:calc(100svh - 90px)!important}
+ .hero .hero-photo{background-position:center center!important}
+ .hero .hero-copy{padding:28px 18px 100px!important}
+ .hero .hero-copy h1{font-size:clamp(34px,10.5vw,64px)!important;letter-spacing:0!important;overflow-wrap:normal!important}
+ .hero .hero-copy p{font-size:14px!important;max-width:95%!important}
+ .hero .hero-note{right:14px!important;bottom:18px!important;max-width:80%!important}
+}
+
+
+/* Remove every hero image wash: show the original photo colors directly */
+.hero{background:#350711!important}
+.hero .hero-photo{
+  background-image:url('intro site.png')!important;
+  background-color:transparent!important;
+  background-size:cover!important;
+  background-position:center!important;
+  opacity:1!important;
+  filter:none!important;
+  mix-blend-mode:normal!important;
+}
+.hero:before,.hero:after,
+.hero .hero-photo:before,.hero .hero-photo:after,
+.hero .hero-inner:before,.hero .hero-inner:after{
+  display:none!important;content:none!important;opacity:0!important;
+  background:none!important;box-shadow:none!important;
+}
+.hero .hero-copy,.hero .hero-copy *{backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+.hero .hero-copy h1,.hero .hero-copy p,.hero .hero-copy .eyebrow{
+  text-shadow:0 2px 10px rgba(0,0,0,.5)!important;
+}
+
+
+/* Responsive hero wordmark: never overflow any screen */
+.hero,.hero .hero-inner,.hero .container,.hero .hero-content,.hero .hero-copy{
+  min-width:0!important;max-width:100%!important;box-sizing:border-box!important;
+}
+.hero .hero-copy{padding-inline:clamp(14px,4vw,52px)!important}
+.hero .hero-copy h1{
+  width:100%!important;max-width:100%!important;
+  font-size:clamp(27px, 8.2vw, 112px)!important;
+  line-height:1.08!important;
+  letter-spacing:clamp(-.025em, .35vw, .02em)!important;
+  white-space:normal!important;
+  overflow-wrap:anywhere!important;
+  word-break:normal!important;
+  hyphens:none!important;
+  text-align:center!important;
+  margin-inline:auto!important;
+  padding-inline:2px!important;
+  box-sizing:border-box!important;
+}
+@media(max-width:420px){
+ .hero .hero-copy{padding-inline:12px!important}
+ .hero .hero-copy h1{font-size:clamp(23px,7.8vw,34px)!important;letter-spacing:-.035em!important;line-height:1.15!important}
+ .hero .hero-copy p{font-size:13px!important}
+}
+@media(min-width:421px) and (max-width:700px){
+ .hero .hero-copy h1{font-size:clamp(30px,8vw,54px)!important;letter-spacing:-.02em!important}
+}
+
+
+/* Refined newsletter, contact and social footer */
+.newsletter{
+  background:linear-gradient(135deg,#4d0b1c 0%,#71182e 52%,#350711 100%)!important;
+  color:#fff4e8!important;border-top:1px solid rgba(220,179,137,.28)!important;
+  border-bottom:1px solid rgba(220,179,137,.24)!important;
+  padding:clamp(34px,6vw,72px) clamp(18px,4vw,52px)!important;
+}
+.newsletter .container,.newsletter .newsletter-inner{
+  max-width:1200px!important;margin-inline:auto!important;
+  display:grid!important;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr)!important;
+  align-items:center!important;gap:clamp(20px,4vw,56px)!important;
+}
+.newsletter h2{color:#fff4e8!important;font-family:'Playfair Display',Georgia,serif!important;font-size:clamp(27px,3vw,42px)!important;line-height:1.15!important;margin-bottom:12px!important}
+.newsletter p{color:#ead0cf!important;line-height:1.8!important;max-width:560px!important}
+.newsletter .eyebrow{color:#e3bd86!important;letter-spacing:.16em!important}
+.newsletter form,.newsletter .email-form{display:flex!important;gap:10px!important;align-items:stretch!important}
+.newsletter input,.newsletter input[type=email]{
+  min-width:0!important;flex:1!important;background:#fff5eb!important;color:#3b101a!important;
+  border:1px solid #d5b18b!important;border-radius:12px!important;padding:15px 16px!important;
+}
+.newsletter input::placeholder{color:#8b6b6c!important}
+.newsletter .primary-btn{white-space:nowrap!important;background:#d1a66c!important;color:#350711!important;border:1px solid #e0c08f!important;border-radius:12px!important;padding:14px 20px!important}
+.footer{
+  background:linear-gradient(145deg,#25040b 0%,#3a0814 55%,#210309 100%)!important;
+  color:#f9e9df!important;border-top:1px solid rgba(220,179,137,.25)!important;
+}
+.footer .container{max-width:1200px!important;margin-inline:auto!important}
+.footer h4{color:#e4bd8c!important;letter-spacing:.12em!important;font-size:12px!important}
+.footer a,.footer p,.copyright{color:#dec7c7!important}
+.footer a{transition:color .2s ease,transform .2s ease}
+.footer a:hover{color:#fff4e8!important}
+.footer .social-links,.footer .social-icons{display:flex!important;gap:10px!important;flex-wrap:wrap!important}
+.footer .social-links a,.footer .social-icons a{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  width:42px!important;height:42px!important;border-radius:50%!important;
+  border:1px solid rgba(220,179,137,.35)!important;background:rgba(112,20,38,.35)!important;
+  color:#f5dfc4!important;font-size:14px!important;transition:transform .2s ease,background .2s ease!important;
+}
+.footer .social-links a:hover,.footer .social-icons a:hover{transform:translateY(-3px)!important;background:#701426!important}
+.footer .contact-line{display:flex;align-items:center;gap:10px;margin:10px 0;color:#dec7c7}
+.footer .contact-line svg{width:18px;height:18px;stroke:#d1a66c;fill:none;stroke-width:1.7}
+.footer .footer-bottom,.footer .copyright{border-color:rgba(220,179,137,.18)!important}
+@media(max-width:700px){
+ .newsletter .container,.newsletter .newsletter-inner{grid-template-columns:1fr!important;gap:18px!important}
+ .newsletter form,.newsletter .email-form{flex-direction:column!important}
+ .newsletter .primary-btn{width:100%!important}
+ .footer .footer-grid{grid-template-columns:1fr 1fr!important;gap:26px 18px!important}
+}
+@media(max-width:420px){
+ .footer .footer-grid{grid-template-columns:1fr!important}
+}
+
+
+/* Harmonize newsletter band with the deep burgundy site identity */
+.newsletter{
+  background:linear-gradient(135deg,#350711 0%,#4a0d1b 52%,#2b060e 100%)!important;
+  color:#fff1e7!important;
+  border-top:1px solid rgba(198,160,106,.24)!important;
+  border-bottom:1px solid rgba(198,160,106,.2)!important;
+  box-shadow:none!important;
+}
+.newsletter:before,.newsletter:after{background:none!important;content:none!important;opacity:0!important}
+.newsletter h2{color:#fff1e7!important}
+.newsletter p{color:#d7bfc0!important}
+.newsletter .eyebrow{color:#d9b477!important}
+.newsletter input,.newsletter input[type=email]{
+  background:#fff4e8!important;color:#3b2024!important;border:1px solid #c6a06a!important;
+  box-shadow:none!important;
+}
+.newsletter input::placeholder{color:#846b6c!important}
+.newsletter .primary-btn{
+  background:#a42b43!important;color:#fff4e8!important;border:1px solid #c6a06a!important;
+}
+.newsletter .primary-btn:hover{background:#8f2638!important}
+
+
+/* Minimal footer: social platforms only; contact numbers can be added later */
+.footer-social-only{
+  background:linear-gradient(145deg,#25040b 0%,#350711 55%,#210309 100%)!important;
+  border-top:1px solid rgba(198,160,106,.22)!important;
+  padding:34px 18px 42px!important;
+}
+.footer-social-only .container{max-width:1100px!important;margin:0 auto!important}
+.footer-social-only-inner{display:flex;flex-direction:column;align-items:center;gap:20px;text-align:center}
+.footer-social-title{margin:0!important;color:#d9b477!important;font-size:13px!important;font-weight:800!important;letter-spacing:.18em!important}
+.footer-social-platforms{display:flex;justify-content:center;align-items:center;gap:14px;flex-wrap:wrap}
+.footer-social-platforms a{
+  min-width:106px;display:flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 16px;border-radius:999px;border:1px solid rgba(198,160,106,.35);
+  background:rgba(112,20,38,.28);color:#f9e9df!important;text-decoration:none;
+  font-size:13px;font-weight:700;transition:transform .2s ease,background .2s ease,border-color .2s ease;
+}
+.footer-social-platforms a:hover{transform:translateY(-3px);background:#701426;border-color:#d1a66c}
+.footer-social-platforms svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.footer-social-platforms svg .solid{fill:currentColor;stroke:none}
+@media(max-width:480px){
+ .footer-social-only{padding:28px 14px 34px!important}
+ .footer-social-platforms{gap:9px}
+ .footer-social-platforms a{min-width:calc(50% - 6px);box-sizing:border-box;padding:12px 10px}
+}
+
+
+/* Premium translucent burgundy category strip with horizontal scrolling on all screens */
+.categories-section,.category-section,.filters-section{background:transparent!important}
+.filters,.category-grid,.categories-grid{
+  display:flex!important;
+  flex-direction:row!important;
+  flex-wrap:nowrap!important;
+  gap:14px!important;
+  align-items:stretch!important;
+  overflow-x:auto!important;
+  overflow-y:hidden!important;
+  padding:6px 2px 14px!important;
+  scroll-snap-type:x mandatory!important;
+  scroll-behavior:smooth!important;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+  scrollbar-color:rgba(224,188,143,.65) rgba(112,20,38,.18);
+  cursor:grab;
+}
+.filters:active,.category-grid:active,.categories-grid:active{cursor:grabbing}
+.filters::-webkit-scrollbar,.category-grid::-webkit-scrollbar,.categories-grid::-webkit-scrollbar{height:6px}
+.filters::-webkit-scrollbar-track,.category-grid::-webkit-scrollbar-track,.categories-grid::-webkit-scrollbar-track{background:rgba(112,20,38,.18);border-radius:20px}
+.filters::-webkit-scrollbar-thumb,.category-grid::-webkit-scrollbar-thumb,.categories-grid::-webkit-scrollbar-thumb{background:rgba(224,188,143,.65);border-radius:20px}
+.filter,.category-card{
+  flex:0 0 clamp(220px,21vw,300px)!important;
+  min-width:0!important;
+  scroll-snap-align:start!important;
+  overflow:hidden!important;
+  border:1px solid rgba(224,188,143,.42)!important;
+  border-radius:18px!important;
+  background:rgba(112,20,38,.32)!important;
+  backdrop-filter:blur(12px)!important;
+  -webkit-backdrop-filter:blur(12px)!important;
+  box-shadow:0 10px 28px rgba(20,0,5,.16)!important;
+  color:#fff4e8!important;
+  transition:transform .24s ease,border-color .24s ease,background .24s ease,box-shadow .24s ease!important;
+}
+.filter:hover,.category-card:hover{
+  transform:translateY(-4px)!important;
+  background:rgba(143,38,56,.48)!important;
+  border-color:#d7b477!important;
+  box-shadow:0 15px 30px rgba(20,0,5,.24)!important;
+}
+.filter.active,.category-card.active{
+  background:rgba(143,38,56,.62)!important;
+  border-color:#e0bd8d!important;
+  box-shadow:inset 0 0 0 1px rgba(224,189,141,.16),0 12px 28px rgba(20,0,5,.22)!important;
+}
+.filter-label,.category-card h3,.filter-arrow{color:#fff4e8!important}
+.filter img,.filter-thumb img,.category-card img{display:block;width:100%;object-fit:cover}
+.products-grid{margin-top:26px!important}
+.products-grid:empty:before{content:"اختار تصنيف من فوق لعرض المنتجات";display:block;grid-column:1/-1;text-align:center;padding:34px 16px;border:1px dashed rgba(224,188,143,.38);border-radius:16px;color:#ead0cf;background:rgba(112,20,38,.16);font-family:Cairo,Tahoma,sans-serif}
+@media(max-width:700px){
+ .filters,.category-grid,.categories-grid{gap:10px!important;scrollbar-width:none}
+ .filters::-webkit-scrollbar,.category-grid::-webkit-scrollbar,.categories-grid::-webkit-scrollbar{display:none}
+ .filter,.category-card{
+   flex:0 0 43vw!important;max-width:190px!important;min-width:138px!important;
+   border-radius:16px!important;scroll-snap-align:start!important;
+ }
+ .filter img,.filter-thumb{height:auto}
+}
+
+
+.empty-products{grid-column:1/-1;text-align:center;padding:30px 16px;margin:0;border:1px dashed rgba(224,188,143,.38);border-radius:16px;color:#ead0cf;background:rgba(112,20,38,.16);font-family:Cairo,Tahoma,sans-serif}
+
+
+/* Floating circular Google Maps location shortcut */
+.store-location-fab{
+  position:fixed;right:20px;bottom:24px;z-index:9000;
+  width:56px;height:56px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  color:#fff4e8!important;
+  background:linear-gradient(145deg,#8f2638,#4a0d1b);
+  border:1px solid rgba(224,189,141,.8);
+  box-shadow:0 8px 24px rgba(20,0,5,.35),inset 0 1px 0 rgba(255,255,255,.12);
+  text-decoration:none!important;
+  transition:transform .22s ease,box-shadow .22s ease,background .22s ease;
+}
+.store-location-fab svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.store-location-fab:hover{transform:translateY(-4px) scale(1.04);background:linear-gradient(145deg,#a73349,#701426);box-shadow:0 12px 30px rgba(20,0,5,.42)}
+.store-location-fab:focus-visible{outline:3px solid #e0bd8d;outline-offset:3px}
+@media(max-width:600px){
+ .store-location-fab{width:52px;height:52px;right:14px;bottom:calc(18px + env(safe-area-inset-bottom))}
+ .store-location-fab svg{width:23px;height:23px}
+}
+
+
+/* Floating Kuwaiti contact numbers widget */
+.store-contact-widget{position:fixed;right:20px;bottom:92px;z-index:9001;font-family:'Cairo',Tahoma,sans-serif}
+.store-contact-toggle{
+  width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(224,189,141,.8);background:linear-gradient(145deg,#d1a66c,#a8793f);
+  color:#350711;box-shadow:0 8px 24px rgba(20,0,5,.32);cursor:pointer;
+  transition:transform .2s ease,box-shadow .2s ease
+}
+.store-contact-toggle:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(20,0,5,.4)}
+.store-contact-toggle svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.store-contact-panel{
+  position:absolute;right:0;bottom:68px;width:min(290px,calc(100vw - 32px));padding:17px;
+  border:1px solid rgba(224,189,141,.42);border-radius:18px;
+  background:linear-gradient(145deg,#4a0d1b,#25040b);color:#fff4e8;
+  box-shadow:0 18px 44px rgba(0,0,0,.4);
+  opacity:0;visibility:hidden;pointer-events:none;transform:translateY(10px) scale(.97);
+  transform-origin:bottom right;transition:opacity .22s ease,transform .22s ease,visibility .22s ease
+}
+.store-contact-widget.open .store-contact-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateY(0) scale(1)}
+.store-contact-heading{margin:0 0 12px;color:#e0bd8d;font-size:15px;font-weight:800;text-align:right}
+.store-contact-number{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 11px;margin-top:8px;border-radius:11px;background:rgba(255,244,232,.06);border:1px solid rgba(224,189,141,.18);color:#fff4e8!important;text-decoration:none;font-weight:700}
+.store-contact-action{font-size:12px;color:#e0bd8d}
+.store-contact-wa{display:block;text-align:center;margin-top:12px;padding:12px;border-radius:11px;background:#a42b43;color:#fff4e8!important;text-decoration:none;font-weight:800}
+@media(max-width:600px){
+ .store-contact-widget{right:14px;bottom:calc(80px + env(safe-area-inset-bottom))}
+ .store-contact-toggle{width:52px;height:52px}
+}
+
+
+/* Match newsletter signup band to NLOVERBOUQUET burgundy palette */
+.newsletter{
+  background:linear-gradient(135deg,#350711 0%,#4a0d1b 55%,#2b060e 100%)!important;
+  color:#fff1e7!important;
+  border-top:1px solid rgba(198,160,106,.24)!important;
+  border-bottom:1px solid rgba(198,160,106,.2)!important;
+  box-shadow:none!important;
+}
+.newsletter::before,.newsletter::after{content:none!important;display:none!important}
+.newsletter h1,.newsletter h2,.newsletter h3,
+.newsletter .eyebrow,.newsletter label{
+  color:#e0bd8d!important;
+}
+.newsletter p,.newsletter small,.newsletter span{
+  color:#f1dddd!important;
+}
+.newsletter input,.newsletter input[type="email"]{
+  background:rgba(255,244,232,.08)!important;
+  color:#fff4e8!important;
+  border:1px solid rgba(224,189,141,.45)!important;
+  border-radius:12px!important;
+  box-shadow:none!important;
+}
+.newsletter input::placeholder{color:#d1b8b9!important;opacity:1!important}
+.newsletter button,.newsletter .primary-btn,.newsletter input[type="submit"]{
+  background:#a42b43!important;
+  color:#fff4e8!important;
+  border:1px solid #c6a06a!important;
+  border-radius:12px!important;
+}
+.newsletter button:hover,.newsletter .primary-btn:hover{
+  background:#8f2638!important;
+}
+
+
+/* Per-number call and WhatsApp actions */
+.store-contact-number{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:11px 10px!important;
+}
+.store-contact-digits{font-weight:800;font-size:14px;letter-spacing:.35px;white-space:nowrap}
+.store-contact-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.store-contact-actions .store-contact-action{
+  display:inline-flex;align-items:center;justify-content:center;
+  min-width:48px;padding:7px 9px;border-radius:9px;
+  font-size:12px;font-weight:800;line-height:1.2;
+  text-decoration:none!important;white-space:nowrap;
+  transition:transform .18s ease,filter .18s ease;
+}
+.store-contact-actions .store-call-action{
+  background:rgba(224,189,141,.14);border:1px solid rgba(224,189,141,.45);
+  color:#f7e6d4!important;
+}
+.store-contact-actions .store-wa-action{
+  background:#27694c;border:1px solid rgba(151,210,170,.55);
+  color:#fff8ef!important;
+}
+.store-contact-actions .store-contact-action:hover{transform:translateY(-1px);filter:brightness(1.1)}
+@media(max-width:380px){
+ .store-contact-panel{padding:13px}
+ .store-contact-number{gap:7px;padding:10px 8px!important}
+ .store-contact-digits{font-size:13px;letter-spacing:0}
+ .store-contact-actions{gap:4px}
+ .store-contact-actions .store-contact-action{min-width:43px;padding:7px 6px;font-size:11px}
+}
+
+
+/* Checkout WhatsApp number chooser — burgundy and gold */
+.order-whatsapp-chooser{position:fixed;inset:0;z-index:12000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .22s ease,visibility .22s ease}
+.order-whatsapp-chooser.open{opacity:1;visibility:visible;pointer-events:auto}
+.order-whatsapp-backdrop{position:absolute;inset:0;background:rgba(12,0,4,.72);backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.order-whatsapp-dialog{position:relative;width:min(100%,420px);padding:28px 22px 22px;border:1px solid rgba(224,189,141,.55);border-radius:22px;background:linear-gradient(145deg,#4a0d1b,#25040b);box-shadow:0 24px 70px rgba(0,0,0,.48);color:#fff4e8;text-align:center;transform:translateY(12px) scale(.98);transition:transform .22s ease}
+.order-whatsapp-chooser.open .order-whatsapp-dialog{transform:translateY(0) scale(1)}
+.order-whatsapp-close{position:absolute;top:10px;right:13px;width:34px;height:34px;border:1px solid rgba(224,189,141,.24);border-radius:50%;background:rgba(255,244,232,.06);color:#fff4e8;font-size:25px;line-height:1;cursor:pointer}
+.order-whatsapp-icon{width:48px;height:48px;margin:0 auto 12px;border-radius:50%;display:grid;place-items:center;background:rgba(209,166,108,.15);border:1px solid rgba(224,189,141,.48);color:#e0bd8d;font-size:24px}
+.order-whatsapp-dialog h3{margin:0 0 9px;color:#f8e8dc;font-family:Georgia,serif;font-size:25px}
+.order-whatsapp-dialog p{margin:0 0 20px;color:#d9bfc2;font-size:13px;line-height:1.8}
+.order-whatsapp-number{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px;padding:14px 13px;border:1px solid rgba(224,189,141,.32);border-radius:13px;background:rgba(255,244,232,.055);color:#fff4e8;text-align:right;cursor:pointer;transition:background .2s ease,border-color .2s ease,transform .2s ease}
+.order-whatsapp-number:hover{background:rgba(143,38,56,.48);border-color:#d1a66c;transform:translateY(-1px)}
+.order-whatsapp-number span{display:flex;flex-direction:column;gap:5px}
+.order-whatsapp-number b{font-size:17px;letter-spacing:.5px}
+.order-whatsapp-number small{font-size:11px;color:#d9bfc2}
+.order-whatsapp-number i{font-style:normal;color:#e0bd8d;font-size:12px;font-weight:800;white-space:nowrap}
+@media(max-width:380px){.order-whatsapp-dialog{padding:25px 15px 17px}.order-whatsapp-number{padding:12px 9px}.order-whatsapp-number i{font-size:11px}}
+
+
+/* Full-width translucent glass price filter */
+.price-filter{display:flex!important;align-items:center;justify-content:space-between;flex-wrap:nowrap;gap:12px;width:100%;min-height:58px;padding:10px 14px!important;border:1px solid rgba(224,189,141,.28)!important;border-radius:8px!important;background:rgba(255,244,232,.12)!important;box-shadow:inset 0 1px 0 rgba(255,255,255,.10),0 8px 24px rgba(0,0,0,.12)!important;backdrop-filter:blur(16px) saturate(135%);-webkit-backdrop-filter:blur(16px) saturate(135%)}
+.price-filter .price-field{display:flex;align-items:center;gap:8px;flex:1 1 0;min-width:0}
+.price-filter .price-field label{color:#f0d9c7!important;white-space:nowrap;font-size:11px}
+.price-filter .price-field input{width:100%!important;min-width:0;flex:1;height:36px!important;background:rgba(53,7,17,.62)!important;color:#fff1e7!important;border:1px solid rgba(224,189,141,.32)!important;border-radius:5px!important;box-shadow:inset 0 1px 5px rgba(0,0,0,.12)}
+.price-filter .price-field input::placeholder{color:#d7bfc0}
+.price-filter button.reset-price{flex:0 0 auto;height:36px!important;padding:0 16px!important;background:rgba(255,244,232,.09)!important;color:#f5e6d8!important;border:1px solid rgba(224,189,141,.38)!important;border-radius:5px!important;backdrop-filter:blur(8px)}
+.price-filter button.reset-price:hover{background:rgba(255,244,232,.18)!important}
+@media(max-width:700px){.price-filter{flex-wrap:wrap;gap:9px;padding:10px!important}.price-filter .price-field{flex:1 1 calc(50% - 9px)}.price-filter button.reset-price{flex:1 1 100%;width:100%}.price-filter .price-field label{font-size:10px}.price-filter .price-field input{height:34px!important}}
+
+</style>
+</head>
+<body>
+
+<div id="flowerIntro" class="flower-intro" aria-label="NLOVERBOUQUET welcome screen">
+  <div class="intro-backdrop"></div>
+  <div class="intro-frame">
+    <div class="intro-image"></div>
+    <div class="intro-content">
+      <div class="intro-flower-mark">❀</div>
+      <div class="intro-wordmark" aria-label="NLOVERBOUQUET"><span id="introTypedName"></span><span class="intro-caret">|</span></div>
+      <p class="intro-tagline">Flowers that make every moment bloom</p>
+      <div class="intro-bottom">
+        <span class="intro-mini-label">NLOVERBOUQUET</span>
+        <span class="intro-mini-line"></span>
+        <span class="intro-mini-caption">Made with love, arranged for you</span>
+      </div>
+    </div>
+  </div>
+  <button type="button" class="intro-skip" id="introSkip" aria-label="Skip intro">تخطي <span>↗</span></button>
+  <div class="intro-hint"><span>اكتشف مجموعتنا</span><span class="intro-hint-arrow">↓</span></div>
+</div>
+
+<header class="site-header"><nav class="nav">
+<a class="brand" href="#home" aria-label="NLOVERBOUQUET home"><span class="brand-mark">❀</span><span><strong>NLOVERBOUQUET</strong><small>FLOWERS FOR EVERY MOMENT</small></span></a>
+<div class="nav-links" id="navLinks"><a href="#home">Home</a><a href="#shop">Flowers</a><a href="#shop">Categories</a><a href="#story">Our Story</a><a href="#footer">Contact</a></div>
+<div class="nav-actions"><button class="icon-btn" id="searchOpen" aria-label="Search">⌕</button><button class="icon-btn" id="favoritesOpen" aria-label="Favorites">♡</button><button class="icon-btn user-btn" id="accountOpen" aria-label="Account">♙</button><button class="icon-btn cart-icon-btn" id="cartOpen" aria-label="سلة المشتريات" title="سلة المشتريات"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 12H4L5 8Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" id="cartCount">0</span></button><button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button></div>
+</nav></header>
+<main>
+<section class="hero" id="home"><div class="hero-photo"></div><div class="hero-copy"><div class="eyebrow">NLOVERBOUQUET · FLOWERS WITH LOVE</div><h1>NLOVERBOUQUET</h1><p>Make moments bloom with love and beauty.</p><button class="primary-btn" onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">SHOP THE COLLECTION&nbsp; →</button><div class="hero-dots"><i></i><i></i><i></i></div></div><div class="hero-note">Flowers for every moment ♡</div></section>
+
+<section class="section products-section" id="shop"><div class="section-head"><div><h2>The flower edit</h2><div class="section-sub">Customer favourites, arranged with love.</div></div><span class="text-link" id="productCount">93 ARRANGEMENTS</span></div>
+<div class="filters" id="filters">
+<button class="filter active" type="button" data-filter="كرلك تزيين طاوله" aria-pressed="true"><img class="filter-thumb" src="photos/كرلك_تزيين_طاوله/1.png" alt="كرلك تزيين طاوله" loading="lazy"><span class="filter-label"><span>كرلك تزيين طاوله</span><span class="filter-arrow">↗</span></span></button>
+<button class="filter" type="button" data-filter="بوكيهات" aria-pressed="false"><img class="filter-thumb" src="photos/بوكيهات/1.png" alt="بوكيهات" loading="lazy"><span class="filter-label"><span>بوكيهات</span><span class="filter-arrow">↗</span></span></button>
+<button class="filter" type="button" data-filter="ورد طبيعي مع فاظا" aria-pressed="false"><img class="filter-thumb" src="photos/ورد_طبيعي_مع_فاظا/1.png" alt="ورد طبيعي مع فاظا" loading="lazy"><span class="filter-label"><span>ورد طبيعي مع فاظا</span><span class="filter-arrow">↗</span></span></button>
+<button class="filter" type="button" data-filter="ستند ورد طبيعي" aria-pressed="false"><img class="filter-thumb" src="photos/ستند_ورد_طبيعي/1.png" alt="ستند ورد طبيعي" loading="lazy"><span class="filter-label"><span>ستند ورد طبيعي</span><span class="filter-arrow">↗</span></span></button>
+<button class="filter" type="button" data-filter="تزيين طاولات" aria-pressed="false"><img class="filter-thumb" src="photos/تزيين_طاوله/2.png" alt="تزيين طاولات" loading="lazy"><span class="filter-label"><span>تزيين طاولات</span><span class="filter-arrow">↗</span></span></button>
+<button class="filter" type="button" data-filter="مسكة عروس" aria-pressed="false"><img class="filter-thumb" src="photos/مسكة_عروس/1.png" alt="مسكة عروس" loading="lazy" onerror="this.onerror=null;this.src='photos/بوكيهات/1.png'"><span class="filter-label"><span>مسكة عروس</span><span class="filter-arrow">↗</span></span></button>
+</div>
+<div class="price-filter" aria-label="Price filters"><div class="price-field"><label for="minPrice">السعر من</label><input id="minPrice" aria-label="أقل سعر بالدينار الكويتي" type="number" min="0" step="0.1" placeholder="0.000"></div><div class="price-field"><label for="maxPrice">إلى</label><input id="maxPrice" aria-label="أعلى سعر بالدينار الكويتي" type="number" min="0" step="0.1" placeholder="0.000"></div><button type="button" class="reset-price" id="resetPrice">مسح الفلتر</button></div>
+<div class="product-grid" id="productGrid"></div></section>
+<section class="story" id="story"><div class="story-inner"><div class="story-photo" role="img" aria-label="Sunlit fresh flowers"></div><div class="story-copy"><div class="eyebrow">A little more meaning in every stem</div><h2>Made by hand.<br>Sent with love.</h2><p>Every NLOVERBOUQUET arrangement is thoughtfully put together with seasonal flowers, beautiful textures, and the little details that make someone feel remembered.</p><button class="primary-btn" onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">FIND YOUR FLOWERS&nbsp; →</button></div></div></section>
+
+</main>
+
+
+
+<div class="store-contact-widget" id="storeContactWidget">
+  <button type="button" class="store-contact-toggle" id="storeContactToggle" aria-label="أرقام التواصل" aria-expanded="false" title="تواصل معنا">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 11.2 19a19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7l.5 3a2 2 0 0 1-.6 1.7L7.2 10a16 16 0 0 0 6 6l1.6-1.8a2 2 0 0 1 1.7-.6l3 .5a2 2 0 0 1 1.5 2.8Z"></path></svg>
+  </button>
+  <div class="store-contact-panel" id="storeContactPanel" aria-hidden="true">
+    <p class="store-contact-heading">تواصل معنا</p>
+    <div class="store-contact-number" dir="ltr"><span class="store-contact-digits">66823233</span><span class="store-contact-actions"><a class="store-contact-action store-call-action" href="tel:+96566823233" aria-label="اتصال بالرقم 66823233">اتصال</a><a class="store-contact-action store-wa-action" href="https://wa.me/96566823233" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب مع الرقم 66823233">واتساب</a></span></div>
+    <div class="store-contact-number" dir="ltr"><span class="store-contact-digits">99033678</span><span class="store-contact-actions"><a class="store-contact-action store-call-action" href="tel:+96599033678" aria-label="اتصال بالرقم 99033678">اتصال</a><a class="store-contact-action store-wa-action" href="https://wa.me/96599033678" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب مع الرقم 99033678">واتساب</a></span></div>
+  </div>
+</div>
+
+<a class="store-location-fab" href="https://maps.app.goo.gl/TKQNFdVGP71hzVqf8" target="_blank" rel="noopener noreferrer" aria-label="افتح موقع المتجر على خرائط Google" title="موقعنا على الخريطة">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+    <circle cx="12" cy="10" r="2.5"></circle>
+  </svg>
+</a>
+
+<footer id="footer" class="footer footer-social-only">
+  <div class="container">
+    <div class="footer-social-only-inner">
+      <p class="footer-social-title">LET’S CONNECT</p>
+      <div class="footer-social-platforms" aria-label="Social platforms">
+        <a href="https://www.instagram.com/nloverbouquet" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="18" cy="6" r="1" class="solid"></circle></svg>
+          <span>Instagram</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="overlay" id="cartOverlay"><aside class="drawer"><div class="drawer-head"><h2>Your flower bag</h2><button class="close-btn" data-close="cartOverlay" aria-label="Close cart">×</button></div><div id="cartItems" class="cart-items"></div><div id="cartFooter"></div></aside></div>
+<div class="overlay" id="favoritesOverlay"><aside class="drawer"><div class="drawer-head"><h2>Your wishlist</h2><button class="close-btn" data-close="favoritesOverlay" aria-label="Close wishlist">×</button></div><div id="favoritesItems" class="cart-items"></div></aside></div>
+<div class="modal-wrap" id="searchModal"><div class="modal"><div class="drawer-head"><h2>Find your flowers</h2><button class="close-btn" data-close="searchModal">×</button></div><div class="search-box"><input id="searchInput" type="search" placeholder="Try roses, birthday, sunflowers…"><button class="primary-btn" id="searchSubmit">SEARCH</button></div><div class="search-results" id="searchResults">Search our collection by name or flower type.</div></div></div>
+<div class="modal-wrap" id="accountModal"><div class="modal"><div class="drawer-head"><h2>Welcome to the garden</h2><button class="close-btn" data-close="accountModal">×</button></div><p>Sign-in is a demo for this prototype. Enter your email to see the interaction.</p><form id="accountForm"><div class="field"><label for="accountEmail">EMAIL ADDRESS</label><input id="accountEmail" type="email" placeholder="you@example.com" required></div><button class="primary-btn" type="submit">CONTINUE WITH EMAIL</button><div class="notice" id="accountNotice">Thanks! Account sign-in can be connected to your real customer system.</div></form></div></div>
+<div class="modal-wrap" id="checkoutModal"><div class="modal"><div class="drawer-head"><h2>Delivery details</h2><button class="close-btn" data-close="checkoutModal">×</button></div><p>Fill in the delivery details to place a demo order. No payment will be taken.</p><form id="checkoutForm"><div class="form-grid"><div class="field"><label for="customerName">FULL NAME</label><input id="customerName" required placeholder="Your name"></div><div class="field"><label for="customerPhone">PHONE NUMBER</label><input id="customerPhone" type="tel" required placeholder="+20 …"></div></div><div class="field"><label for="customerEmail">EMAIL ADDRESS</label><input id="customerEmail" type="email" required placeholder="you@example.com"></div><div class="field"><label for="deliveryAddress">DELIVERY ADDRESS</label><textarea id="deliveryAddress" required placeholder="Street, area, city"></textarea></div><div class="form-grid"><div class="field"><label for="deliveryDate">DELIVERY DATE</label><input id="deliveryDate" type="date" required></div><div class="field"><label for="giftNote">GIFT NOTE (OPTIONAL)</label><input id="giftNote" placeholder="A little message"></div></div><div class="notice" id="checkoutNotice"></div><button class="primary-btn checkout-btn" type="submit">PLACE DEMO ORDER</button></form></div></div>
+<div class="modal-wrap" id="infoModal"><div class="modal"><div class="drawer-head"><h2 id="infoTitle">A note from us</h2><button class="close-btn" data-close="infoModal">×</button></div><p id="infoText"></p><button class="primary-btn" data-close="infoModal">GOT IT</button></div></div>
+<script>
+const products=[
+{id:1,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:29.900,old:35.000,rating:"★★★★☆",reviews:373,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/1.png"},
+{id:2,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★★",reviews:98,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/2.png"},
+{id:3,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★☆",reviews:279,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/3.png"},
+{id:4,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★☆",reviews:26,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/4.png"},
+{id:5,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22,old:27,rating:"★★★★☆",reviews:374,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/5.png"},
+{id:6,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★☆",reviews:113,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/6.png"},
+{id:7,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★★",reviews:348,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/7.png"},
+{id:8,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:22.900,old:29.900,rating:"★★★★★",reviews:268,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/8.png"},
+{id:9,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:20,old:25,rating:"★★★★★",reviews:267,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/9.png"},
+{id:10,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:20,rating:"★★★★★",reviews:465,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/10.png"},
+{id:11,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:29.500,rating:"★★★★★",reviews:313,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/11.png"},
+{id:12,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:20,rating:"★★★★☆",reviews:430,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/12.png"},
+{id:13,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:20,rating:"★★★★★",reviews:377,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/13.png"},
+{id:14,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:20,rating:"★★★★★",reviews:421,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/14.png"},
+{id:15,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:12.900,old:20,rating:"★★★★★",reviews:474,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/15.png"},
+{id:16,name:"ستاند ورد طبيعي",category:"كرلك تزيين طاوله",price:13.900,old:20,rating:"★★★★☆",reviews:212,tag:"BESTSELLER",desc:"🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️",img:"photos/كرلك_تزيين_طاوله/16.png"},
+{id:17,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:12.5,old:15,rating:"★★★★★",reviews:87,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/1.png"},
+{id:18,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★☆",reviews:310,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/2.png"},
+{id:19,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:9.5,old:12,rating:"★★★★★",reviews:169,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/3.png"},
+{id:20,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:434,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/4.png"},
+{id:21,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:35,old:40,rating:"★★★★☆",reviews:482,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/5.png"},
+{id:22,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:407,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/6.png"},
+{id:23,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8,old:10,rating:"★★★★☆",reviews:85,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/7.png"},
+{id:24,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:7,old:9,rating:"★★★★☆",reviews:111,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/8.png"},
+{id:25,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:7.5,old:10,rating:"★★★★★",reviews:278,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/9.png"},
+{id:26,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:416,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/10.png"},
+{id:27,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:17.5,old:20,rating:"★★★★★",reviews:145,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/11.png"},
+{id:28,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★☆",reviews:319,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/12.png"},
+{id:29,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★☆",reviews:245,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/13.png"},
+{id:30,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:11.5,old:14,rating:"★★★★★",reviews:196,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/14.png"},
+{id:31,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:117,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/15.png"},
+{id:32,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:11.5,old:15,rating:"★★★★☆",reviews:414,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/16.png"},
+{id:33,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:27,old:30,rating:"★★★★☆",reviews:171,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/17.png"},
+{id:34,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:9,old:11,rating:"★★★★★",reviews:385,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/18.png"},
+{id:35,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:467,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/19.png"},
+{id:36,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:45,old:47,rating:"★★★★★",reviews:213,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/20.png"},
+{id:37,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:15,old:17.5,rating:"★★★★★",reviews:134,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/21.png"},
+{id:38,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:10.5,old:13,rating:"★★★★★",reviews:65,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/22.png"},
+{id:39,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:9.5,old:12,rating:"★★★★★",reviews:414,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/23.png"},
+{id:40,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:7,old:10,rating:"★★★★★",reviews:40,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/24.png"},
+{id:41,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:470,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/25.png"},
+{id:42,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:9.5,old:12,rating:"★★★★★",reviews:300,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/26.png"},
+{id:43,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:9,old:13,rating:"★★★★★",reviews:321,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/27.png"},
+{id:44,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★☆",reviews:486,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/28.png"},
+{id:45,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:8.5,old:10,rating:"★★★★★",reviews:299,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/29.png"},
+{id:46,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:190,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/30.png"},
+{id:47,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:188,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/31.png"},
+{id:48,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:178,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/32.png"},
+{id:49,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:82,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/33.png"},
+{id:50,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:95,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/34.png"},
+{id:51,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:281,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/35.png"},
+{id:52,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:178,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/36.png"},
+{id:53,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:158,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/37.png"},
+{id:54,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:303,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/38.png"},
+{id:55,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:326,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/39.png"},
+{id:56,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:222,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/40.png"},
+{id:57,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:474,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/41.png"},
+{id:58,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:217,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/42.png"},
+{id:59,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★☆",reviews:446,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/43.png"},
+{id:60,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:113,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/44.png"},
+{id:61,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:96,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/45.png"},
+{id:62,name:'بوكيه مخصص للمناسبات',category:'بوكيهات',price:6.5,old:10,rating:"★★★★★",reviews:135,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/بوكيهات/46.png"},
+{id:63,name:'تزيين طاولات',category:'تزيين طاولات',price:29,old:31,rating:"★★★★☆",reviews:322,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/1.png"},
+{id:64,name:'تزيين طاولات',category:'تزيين طاولات',price:33.5,old:35,rating:"★★★★★",reviews:277,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/2.png"},
+{id:65,name:'تزيين طاولات',category:'تزيين طاولات',price:29,old:31,rating:"★★★★★",reviews:385,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/3.png"},
+{id:66,name:'تزيين طاولات',category:'تزيين طاولات',price:33.5,old:35,rating:"★★★★☆",reviews:354,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/4.png"},
+{id:67,name:'تزيين طاولات',category:'تزيين طاولات',price:33.5,old:35,rating:"★★★★★",reviews:177,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/5.png"},
+{id:68,name:'تزيين طاولات',category:'تزيين طاولات',price:30.5,old:32,rating:"★★★★★",reviews:442,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/6.png"},
+{id:69,name:'تزيين طاولات',category:'تزيين طاولات',price:34.5,old:40.4,rating:"★★★★★",reviews:87,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/7.png"},
+{id:70,name:'تزيين طاولات',category:'تزيين طاولات',price:33.5,old:35,rating:"★★★★★",reviews:292,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/8.png"},
+{id:71,name:'تزيين طاولات',category:'تزيين طاولات',price:4.5,old:7,rating:"★★★★★",reviews:152,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/9.png"},
+{id:72,name:'تزيين طاولات',category:'تزيين طاولات',price:3.5,old:6,rating:"★★★★★",reviews:311,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/تزيين_طاوله/10.png"},
+{id:73,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:10.5,old:14.5,rating:"★★★★★",reviews:199,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/1.png"},
+{id:74,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:8.5,old:10.5,rating:"★★★★☆",reviews:21,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/2.png"},
+{id:75,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:10.5,old:14.5,rating:"★★★★★",reviews:441,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/3.png"},
+{id:76,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:8.5,old:11.5,rating:"★★★★★",reviews:33,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/4.png"},
+{id:77,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:8.5,old:11.5,rating:"★★★★★",reviews:485,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/5.png"},
+{id:78,name:'ورد طبيعي مع فاظا',category:'ورد طبيعي مع فاظا',price:8.5,old:6,rating:"★★★★☆",reviews:295,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ورد_طبيعي_مع_فاظا/6.png"},
+{id:79,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:25.5,old:29.5,rating:"★★★★☆",reviews:430,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/1.png"},
+{id:80,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:11.5,old:13,rating:"★★★★☆",reviews:237,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/2.png"},
+{id:81,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:14.5,old:18.5,rating:"★★★★★",reviews:403,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/3.png"},
+{id:82,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:3.5,old:6,rating:"★★★★★",reviews:144,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/4.png"},
+{id:83,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:14.5,old:17.5,rating:"★★★★★",reviews:66,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/5.png"},
+{id:84,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:29.5,old:35.5,rating:"★★★★☆",reviews:336,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/6.png"},
+{id:85,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:33.5,old:45,rating:"★★★★☆",reviews:190,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/7.png"},
+{id:86,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:11.5,old:13,rating:"★★★★★",reviews:178,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/8.png"},
+{id:87,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:17.5,old:22.5,rating:"★★★★★",reviews:57,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/9.png"},
+{id:88,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:8.5,old:11,rating:"★★★★★",reviews:290,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/10.png"},
+{id:89,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:12.5,old:15,rating:"★★★★☆",reviews:116,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/11.png"},
+{id:90,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:10,old:12,rating:"★★★★☆",reviews:337,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/12.png"},
+{id:91,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:25.5,old:29.5,rating:"★★★★☆",reviews:362,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/13.png"},
+{id:92,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:24.5,old:30.5,rating:"★★★★★",reviews:105,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/14.png"},
+{id:93,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:29.5,old:35.5,rating:"★★★★☆",reviews:271,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/15.png"},
+{id:94,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:33.5,old:45,rating:"★★★★☆",reviews:50,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/16.png"},
+{id:95,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:13.5,old:15.5,rating:"★★★★☆",reviews:43,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/17.png"},
+{id:96,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:35.5,old:45,rating:"★★★★☆",reviews:440,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/18.png"},
+{id:97,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:17.5,old:20.5,rating:"★★★★★",reviews:420,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/19.png"},
+{id:98,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:12.5,old:14.5,rating:"★★★★★",reviews:220,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/20.png"},
+{id:99,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:13.5,old:15.5,rating:"★★★★★",reviews:268,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/21.png"},
+{id:100,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:16.5,old:18.5,rating:"★★★★★",reviews:167,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/22.png"},
+{id:101,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:14.5,old:18.5,rating:"★★★★☆",reviews:381,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/23.png"},
+{id:102,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:12.5,old:15.5,rating:"★★★★★",reviews:296,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/24.png"},
+{id:103,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:13.5,old:15,rating:"★★★★★",reviews:35,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/25.png"},
+{id:104,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:17.5,old:20.5,rating:"★★★★★",reviews:432,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/26.png"},
+{id:105,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:12.5,old:15.5,rating:"★★★★★",reviews:226,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/27.png"},
+{id:106,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:9.5,old:12.5,rating:"★★★★★",reviews:458,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/28.png"},
+{id:107,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:14.5,old:18.5,rating:"★★★★★",reviews:73,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/29.png"},
+{id:108,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:15.5,old:18.5,rating:"★★★★★",reviews:452,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/30.png"},
+{id:109,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:11.5,old:13,rating:"★★★★★",reviews:412,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/31.png"},
+{id:110,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:13.5,old:15,rating:"★★★★☆",reviews:295,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/32.png"},
+{id:117,name:'ستند ورد طبيعي',category:'ستند ورد طبيعي',price:25.5,old:30,rating:"★★★★★",reviews:53,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/ستند_ورد_طبيعي/33.png"},
+{id:111,name:'مسكة عروس',category:'مسكة عروس',price:23.5,old:27,rating:"★★★★★",reviews:151,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/1.png"},
+{id:112,name:'مسكة عروس',category:'مسكة عروس',price:25.5,old:30,rating:"★★★★★",reviews:363,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/2.png"},
+{id:113,name:'مسكة عروس',category:'مسكة عروس',price:25.5,old:30,rating:"★★★★☆",reviews:115,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/3.png"},
+{id:114,name:'مسكة عروس',category:'مسكة عروس',price:23.5,old:29,rating:"★★★★★",reviews:35,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/4.png"},
+{id:115,name:'مسكة عروس',category:'مسكة عروس',price:25.5,old:33,rating:"★★★★☆",reviews:97,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/5.png"},
+{id:116,name:'مسكة عروس',category:'مسكة عروس',price:27.5,old:33.5,rating:"★★★★☆",reviews:312,tag:"BESTSELLER",desc:'🌹 نيلوفر بوكيه… ورد يعبّر عن اللي في القلب ❤️',img:"photos/مسكة_عروس/6.png"},
+];
+
+let cart=JSON.parse(localStorage.getItem("nlb_cart")||"[]"),favorites=JSON.parse(localStorage.getItem("nlb_favs")||"[]"),activeFilter="";
+const money=n=>Number(n).toLocaleString("en-US",{minimumFractionDigits:3,maximumFractionDigits:3})+" KD";
+const byId=id=>products.find(p=>p.id===id);
+function save(){localStorage.setItem("nlb_cart",JSON.stringify(cart));localStorage.setItem("nlb_favs",JSON.stringify(favorites));}
+let activeMinPrice=null,activeMaxPrice=null;
+const allowedCategories=["كرلك تزيين طاوله","بوكيهات","ورد طبيعي مع فاظا","ستند ورد طبيعي","تزيين طاولات","مسكة عروس"];
+function normalizeCategory(category){return category;}
+function filteredProducts(){if (!activeFilter) return [];
+return products.filter(p=>{const category=normalizeCategory(p.category);return allowedCategories.includes(category)&&(activeFilter==="All"||category===activeFilter)&&(activeMinPrice===null||p.price>=activeMinPrice)&&(activeMaxPrice===null||p.price<=activeMaxPrice);});}
+function renderProducts(list=filteredProducts()){const grid=document.getElementById("productGrid");grid.innerHTML=list.length?list.map(p=>`<article class="product-card"><div class="product-image"><img loading="lazy" src="${p.img}" alt="${p.name}"><span class="tag">${p.tag}</span><button class="heart ${favorites.includes(p.id)?"liked":""}" onclick="toggleFavorite(${p.id})" aria-label="Add ${p.name} to wishlist">${favorites.includes(p.id)?"♥":"♡"}</button></div><div class="product-info"><h3>${p.name}</h3><div class="product-desc">${p.desc}</div><div class="price-row"><span class="price">${money(p.price)}</span>${p.old?`<span class="old-price">${money(p.old)}</span>`:""}<span class="rating">${p.rating} <span style="color:#8b8d85">(${p.reviews})</span></span></div><button class="add-btn" onclick="addToCart(${p.id})">＋ &nbsp; ADD TO BAG</button></div></article>`).join(""):`<p class="empty-products">${!activeFilter?"اختار تصنيف من فوق لعرض المنتجات":"لا توجد منتجات في نطاق السعر المحدد."}</p>`;document.getElementById("productCount").textContent=`${list.length} ARRANGEMENT${list.length===1?"":"S"}`;}
+function applyFilter(f){activeFilter=f;document.querySelectorAll("#filters .filter").forEach(b=>{const active=b.dataset.filter===f;b.classList.toggle("active",active);b.setAttribute("aria-pressed",String(active));});renderProducts(filteredProducts());}
+function updatePriceFilter(){const minField=document.getElementById("minPrice"),maxField=document.getElementById("maxPrice");const minValue=minField.value.trim(),maxValue=maxField.value.trim();activeMinPrice=minValue===""?null:Number(minValue);activeMaxPrice=maxValue===""?null:Number(maxValue);if(activeMinPrice!==null&&activeMaxPrice!==null&&activeMinPrice>activeMaxPrice){maxField.setCustomValidity("أعلى سعر لازم يكون أكبر من أو يساوي أقل سعر.");maxField.reportValidity();return;}maxField.setCustomValidity("");renderProducts(filteredProducts());}
+function addToCart(id){const item=cart.find(x=>x.id===id);if(item)item.qty++;else cart.push({id,qty:1});save();renderCart();document.getElementById("cartOpen").animate([{transform:"scale(1)"},{transform:"scale(1.16)"},{transform:"scale(1)"}],{duration:260});}
+function toggleFavorite(id){favorites=favorites.includes(id)?favorites.filter(x=>x!==id):[...favorites,id];save();renderProducts(filteredProducts());renderFavorites();}
+function cartQty(){return cart.reduce((s,x)=>s+x.qty,0)}
+function renderCart(){document.getElementById("cartCount").textContent=cartQty();const el=document.getElementById("cartItems"),foot=document.getElementById("cartFooter");if(!cart.length){el.innerHTML=`<div class="empty"><span>❀</span>Your bag is waiting for something beautiful.<br><br><button class="primary-btn" onclick="closeOverlay('cartOverlay');document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">EXPLORE FLOWERS</button></div>`;foot.innerHTML="";return;}el.innerHTML=cart.map(x=>{const p=byId(x.id);if(!p)return "";return `<div class="cart-item"><img src="${p.img}" alt="${p.name}"><div><h4>${p.name}</h4><small>${money(p.price)} each</small><div class="qty"><button onclick="changeQty(${p.id},-1)" aria-label="Decrease quantity">−</button><span>${x.qty}</span><button onclick="changeQty(${p.id},1)" aria-label="Increase quantity">+</button></div></div><button class="remove" onclick="removeCart(${p.id})">Remove</button></div>`;}).join("");const total=cart.reduce((sum,item)=>sum+(byId(item.id)?.price||0)*item.qty,0);foot.innerHTML=`<div class="cart-summary"><div class="summary-row"><span>Subtotal</span><b>${money(total)}</b></div><div class="summary-row"><span>Delivery</span><span>To be confirmed on WhatsApp</span></div><div class="summary-row total"><span>Total</span><span>${money(total)}</span></div><button class="primary-btn checkout-btn" onclick="sendCartToWhatsApp()">ORDER VIA WHATSAPP&nbsp; →</button><p style="font-size:10px;color:var(--muted);text-align:center">Delivery details confirmed on WhatsApp</p></div>`;}
+function changeQty(id,d){const x=cart.find(i=>i.id===id);if(!x)return;x.qty+=d;if(x.qty<=0)cart=cart.filter(i=>i.id!==id);save();renderCart();}
+function removeCart(id){cart=cart.filter(x=>x.id!==id);save();renderCart();}
+function renderFavorites(){const el=document.getElementById("favoritesItems"),list=products.filter(p=>favorites.includes(p.id));el.innerHTML=list.length?list.map(p=>`<div class="cart-item"><img src="${p.img}" alt="${p.name}"><div><h4>${p.name}</h4><small>${money(p.price)}</small><div class="qty"><button onclick="addToCart(${p.id});openOverlay('cartOverlay')" aria-label="Add to bag">＋</button><button class="remove" onclick="toggleFavorite(${p.id});renderFavorites()">Remove</button></div></div></div>`).join(""):'<div class="empty"><span>♡</span>Your wishlist is waiting for a favourite.</div>';}
+function openOverlay(id){document.getElementById(id).classList.add("open");document.body.style.overflow="hidden";if(id==="cartOverlay")renderCart();if(id==="favoritesOverlay")renderFavorites();}
+function closeOverlay(id){document.getElementById(id).classList.remove("open");document.body.style.overflow="";}
+function openModal(id){document.getElementById(id).classList.add("open");document.body.style.overflow="hidden";}
+function closeModal(id){document.getElementById(id).classList.remove("open");document.body.style.overflow="";}
+document.querySelectorAll("#filters .filter").forEach(b=>b.addEventListener("click",()=>applyFilter(b.dataset.filter)));
+document.getElementById("minPrice").addEventListener("input",updatePriceFilter);document.getElementById("maxPrice").addEventListener("input",updatePriceFilter);
+document.getElementById("resetPrice").addEventListener("click",()=>{document.getElementById("minPrice").value="";document.getElementById("maxPrice").value="";document.getElementById("maxPrice").setCustomValidity("");activeMinPrice=activeMaxPrice=null;renderProducts(filteredProducts());});
+document.getElementById("cartOpen").addEventListener("click",()=>openOverlay("cartOverlay"));document.getElementById("favoritesOpen").addEventListener("click",()=>openOverlay("favoritesOverlay"));document.getElementById("searchOpen").addEventListener("click",()=>{openModal("searchModal");setTimeout(()=>document.getElementById("searchInput").focus(),100)});document.getElementById("accountOpen").addEventListener("click",()=>openModal("accountModal"));
+const menuToggle=document.getElementById("menuToggle");
+const navLinks=document.getElementById("navLinks");
+menuToggle.addEventListener("click",()=>{
+  const opened=navLinks.classList.toggle("open");
+  menuToggle.classList.toggle("is-open",opened);
+  menuToggle.setAttribute("aria-expanded",String(opened));
+});
+document.addEventListener("click",e=>{
+  if(!navLinks.contains(e.target)&&!menuToggle.contains(e.target)){
+    navLinks.classList.remove("open");
+    menuToggle.classList.remove("is-open");
+    menuToggle.setAttribute("aria-expanded","false");
+  }
+});
+
+document.querySelectorAll("[data-close]").forEach(b=>b.addEventListener("click",()=>{closeOverlay(b.dataset.close);closeModal(b.dataset.close)}));document.querySelectorAll(".overlay").forEach(o=>o.addEventListener("click",e=>{if(e.target===o)closeOverlay(o.id)}));document.querySelectorAll(".modal-wrap").forEach(o=>o.addEventListener("click",e=>{if(e.target===o)closeModal(o.id)}));document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("navLinks").classList.remove("open")));
+function doSearch(){const q=document.getElementById("searchInput").value.trim().toLowerCase();const list=products.filter(p=>allowedCategories.includes(normalizeCategory(p.category))&&(p.name+" "+normalizeCategory(p.category)+" "+p.desc).toLowerCase().includes(q));document.getElementById("searchResults").innerHTML=list.length?`Found ${list.length} beautiful option${list.length===1?"":"s"}: ${list.slice(0,8).map(p=>p.name).join(", ")}. <br><br><button class="primary-btn" id="viewSearchResults">VIEW RESULTS</button>`:"No matches yet — try another flower name or category.";const btn=document.getElementById("viewSearchResults");if(btn)btn.onclick=()=>{closeModal("searchModal");renderProducts(list);document.querySelector("#shop").scrollIntoView({behavior:"smooth"});}}
+document.getElementById("searchSubmit").addEventListener("click",doSearch);document.getElementById("searchInput").addEventListener("keydown",e=>{if(e.key==="Enter")doSearch()});
+document.getElementById("accountForm").addEventListener("submit",e=>{e.preventDefault();document.getElementById("accountNotice").classList.add("show")});
+document.getElementById("checkoutForm").addEventListener("submit",e=>{e.preventDefault();const notice=document.getElementById("checkoutNotice");notice.classList.add("show");notice.innerHTML=`Thank you, ${document.getElementById("customerName").value}! Your demo order is ready. To accept real orders, connect this website to an order-management system and payment provider.`;cart=[];save();renderCart();});
+const today=new Date();document.getElementById("deliveryDate").min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().split("T")[0];
+function info(title,text){document.getElementById("infoTitle").textContent=title;document.getElementById("infoText").textContent=text;openModal("infoModal");}
+document.getElementById("footerDelivery").onclick=e=>{e.preventDefault();info("Delivery information","Choose your preferred delivery date at checkout. Delivery details and costs can be confirmed on WhatsApp.")};document.getElementById("footerCare").onclick=e=>{e.preventDefault();info("Flower care guide","Trim stems at an angle, place flowers in a clean vase with fresh water, remove leaves below the waterline, and keep your bouquet away from direct sunlight, heaters, and ripening fruit. Refresh the water every two days.")};document.getElementById("footerContact").onclick=e=>{e.preventDefault();info("Contact NLOVERBOUQUET","Contact us through WhatsApp to confirm your order details and delivery.")};
+const WHATSAPP_NUMBER="201288908400";
+const KUWAIT_ORDER_NUMBERS=[{number:"96566823233",label:"66823233"},{number:"96599033678",label:"99033678"}];
+let currentCustomerOrderDetails = null;
+function buildOrderMessage(){
+  if(!cart.length)return "";
+  const lines=cart.map((item,index)=>{
+    const product=byId(item.id);
+    return `${index+1}. ${product.name}\nالسعر: ${money(product.price)}\nالكمية: ${item.qty}\nإجمالي المنتج: ${money(product.price*item.qty)}`;
+  });
+  const subtotal=cart.reduce((sum,item)=>sum+byId(item.id).price*item.qty,0);
+  return [
+    "🌷 طلب جديد من NLOVERBOUQUET",
+    "",
+    ...lines,
+    "",
+    `عدد المنتجات المختلفة: ${cart.length}`,
+    `إجمالي الكميات: ${cart.reduce((sum,item)=>sum+item.qty,0)}`,
+    `الإجمالي: ${money(subtotal)}`,
+    "التوصيل: يتم تأكيده عبر واتساب",
+    "",
+    "من فضلكم أكدوا تفاصيل الطلب والتوصيل معي عبر واتساب."
+  ].join("\n");
+}
+function sendCartToWhatsApp(){
+  if(!cart.length)return;
+  const modal=document.getElementById("orderWhatsAppChooser");
+  if(modal){modal.classList.add("open");modal.setAttribute("aria-hidden","false");}
+}
+function chooseOrderWhatsApp(number){
+  const message=buildOrderMessage();
+  if(!message)return;
+  window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`,"_blank","noopener");
+  closeOrderWhatsAppChooser();
+}
+function closeOrderWhatsAppChooser(){
+  const modal=document.getElementById("orderWhatsAppChooser");
+  if(modal){modal.classList.remove("open");modal.setAttribute("aria-hidden","true");}
+}
+renderProducts(filteredProducts());renderCart();renderFavorites();
+</script>
+<script>
+
+/* Welcome screen: type the store name, then reveal the shop */
+(function(){
+  const intro=document.getElementById('flowerIntro');
+  const target=document.getElementById('introTypedName');
+  const skip=document.getElementById('introSkip');
+  if(!intro||!target||!skip)return;
+  const name='NLOVERBOUQUET';
+  let i=0,closed=false,typingTimer,closeTimer;
+  function finish(){
+    if(closed)return; closed=true;
+    clearTimeout(typingTimer); clearTimeout(closeTimer);
+    intro.classList.add('is-leaving');
+    setTimeout(()=>{intro.remove();document.body.classList.remove('intro-lock')},750);
+  }
+  document.body.classList.add('intro-lock');
+  function typeNext(){
+    if(closed)return;
+    if(i<name.length){target.textContent+=name.charAt(i++);typingTimer=setTimeout(typeNext,105)}
+    else {closeTimer=setTimeout(finish,2400)}
+  }
+  skip.addEventListener('click',finish);
+  window.addEventListener('keydown',e=>{if(e.key==='Escape'&&!closed)finish()});
+  setTimeout(typeNext,500);
+})();
+
+</script>
+
+<script>
+(function(){
+  const widget=document.getElementById('storeContactWidget');
+  const toggle=document.getElementById('storeContactToggle');
+  const panel=document.getElementById('storeContactPanel');
+  if(!widget||!toggle||!panel)return;
+  toggle.addEventListener('click',function(){
+    const open=widget.classList.toggle('open');
+    toggle.setAttribute('aria-expanded',String(open));
+    panel.setAttribute('aria-hidden',String(!open));
+  });
+  document.addEventListener('click',function(e){
+    if(!widget.contains(e.target)){
+      widget.classList.remove('open');
+      toggle.setAttribute('aria-expanded','false');
+      panel.setAttribute('aria-hidden','true');
+    }
+  });
+})();
+</script>
+
+<div class="order-whatsapp-chooser" id="orderWhatsAppChooser" aria-hidden="true">
+  <div class="order-whatsapp-backdrop" onclick="closeOrderWhatsAppChooser()"></div>
+  <section class="order-whatsapp-dialog" role="dialog" aria-modal="true" aria-labelledby="orderWhatsAppTitle">
+    <button type="button" class="order-whatsapp-close" onclick="closeOrderWhatsAppChooser()" aria-label="إغلاق">×</button>
+    <div class="order-whatsapp-icon" aria-hidden="true">✦</div>
+    <h3 id="orderWhatsAppTitle">اختار رقم إرسال الطلب</h3>
+    <p>هنجهز رسالة فيها المنتجات والكميات والأسعار والإجمالي، وتقدر تراجعها قبل الإرسال.</p>
+    <button type="button" class="order-whatsapp-number" onclick="chooseOrderWhatsApp('96566823233')">
+      <span><b dir="ltr">66823233</b><small>واتساب الكويت · الرقم الأول</small></span><i>فتح واتساب ↗</i>
+    </button>
+    <button type="button" class="order-whatsapp-number" onclick="chooseOrderWhatsApp('96599033678')">
+      <span><b dir="ltr">99033678</b><small>واتساب الكويت · الرقم الثاني</small></span><i>فتح واتساب ↗</i>
+    </button>
+  </section>
+</div>
+
+</body>
+</html>
